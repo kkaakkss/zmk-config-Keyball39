@@ -47,8 +47,8 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - '6'
-  - '7'
-  - '8'
+  - AC HOME
+  - $$mdi:arrow-up-bold$$
   - '9'
   - '0'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -57,9 +57,9 @@ layers:
   - '6'
   - {t: ., s: '>'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '1'

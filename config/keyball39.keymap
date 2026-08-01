@@ -72,7 +72,7 @@
             >;
         };
 
-        number_layer {
+        no_navi_layer {
             label = "NUM";
             bindings = <
 &trans     &kp N7        &kp N8        &kp N9        &kp LEFT_PARENTHESIS                  &kp RIGHT_PARENTHESIS  &kp HOME        &kp UP_ARROW   &kp END      &trans

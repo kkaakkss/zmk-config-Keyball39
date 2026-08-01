@@ -45,7 +45,7 @@ layers:
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - '5'
+  - {t: '0', s: )}
   - '6'
   - '7'
   - '8'
@@ -55,7 +55,7 @@ layers:
   - '4'
   - {t: '5', s: '%'}
   - '6'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ., s: '>'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -65,15 +65,15 @@ layers:
   - '1'
   - '2'
   - '3'
+  - {t: ',', s: <}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

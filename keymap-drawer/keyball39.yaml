@@ -45,8 +45,8 @@ layers:
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - (
+  - )
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
@@ -55,8 +55,8 @@ layers:
   - '4'
   - {t: '5', s: '%'}
   - '6'
-  - {t: ., s: '>'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -65,14 +65,14 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {t: ',', s: <}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - <
+  - '>'
   - Sft+HOME
   - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
   - Sft+END
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
   - {t: '0', s: )}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}

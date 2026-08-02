@@ -277,10 +277,10 @@
         navi_layer {
             label = "F키&화살표";
             bindings = <
-&kp F2     &kp F2     &kp F3     &kp F4     &kp F5                     &none   &kp HOME        &kp UP_ARROW   &kp END      &ht LC(PG_UP) PG_UP
-&kp LC(A)  &trans     &trans     &kp LC(F)  &kp LC(H)                  &none   &kp LEFT_ARROW  &kp DOWN       &kp RIGHT    &ht LC(PAGE_DOWN) PAGE_DOWN
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)                  &none   &kp LS(HOME)    &kp LS(ENTER)  &kp LS(END)  &none
-&trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans                                              &none
+&kp F2     &kp F2     &kp F3             &kp F4           &kp F5                     &none   &kp HOME        &kp UP_ARROW   &kp END      &ht LC(HOME) PG_UP
+&kp LC(A)  &none      &kp LC(PAGE_DOWN)  &kp LC(PAGE_UP)  &none                      &none   &kp LEFT_ARROW  &kp DOWN       &kp RIGHT    &ht LC(END) PAGE_DOWN
+&kp LC(Z)  &kp LC(X)  &kp LC(C)          &kp LC(V)        &kp LC(B)                  &none   &kp LS(HOME)    &kp LS(ENTER)  &kp LS(END)  &none
+&trans     &trans     &trans             &trans           &trans     &trans  &trans  &trans                                              &none
             >;
         };
 

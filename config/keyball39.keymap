@@ -282,7 +282,7 @@
 
         shift_end {
             bindings = <&kp LS(END)>;
-            key-positions = <7 7 8>;
+            key-positions = <7 8>;
             layers = <1>;
         };
 

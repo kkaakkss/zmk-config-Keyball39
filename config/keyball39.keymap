@@ -286,19 +286,19 @@
         navi_layer {
             label = "F키&화살표";
             bindings = <
-&kp F2     &kp F2     &kp F3             &kp F4           &kp F5                     &none   &kp HOME        &kp UP_ARROW   &kp END      &ht LC(HOME) PG_UP
-&kp LC(A)  &none      &kp LC(PAGE_DOWN)  &kp LC(PAGE_UP)  &none                      &none   &kp LEFT_ARROW  &kp DOWN       &kp RIGHT    &ht LC(END) PAGE_DOWN
-&kp LC(Z)  &kp LC(X)  &kp LC(C)          &kp LC(V)        &kp LC(B)                  &none   &kp LS(HOME)    &kp LS(ENTER)  &kp LS(END)  &none
-&trans     &trans     &trans             &trans           &trans     &trans  &trans  &trans                                              &none
+&kp GRAVE             &kp F2     &kp F3             &kp F4           &kp F5                     &none   &kp HOME        &kp UP_ARROW   &kp END      &ht LC(HOME) PG_UP
+&kp NON_US_BACKSLASH  &kp LC(S)  &kp LC(PAGE_DOWN)  &kp LC(PAGE_UP)  &none                      &none   &kp LEFT_ARROW  &kp DOWN       &kp RIGHT    &ht LC(END) PAGE_DOWN
+&kp LC(Z)             &kp LC(X)  &kp LC(C)          &kp LC(V)        &kp LC(B)                  &none   &kp LS(HOME)    &kp LS(ENTER)  &kp LS(END)  &none
+&trans                &trans     &trans             &trans           &trans     &trans  &trans  &trans                                              &none
             >;
         };
 
         num {
             bindings = <
-&none         &bt BT_CLR_ALL  &bt_in_out    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp PLUS        &kp N7  &kp N8  &kp N9  &ht UNDERSCORE MINUS
-&none         &none           &none         &kp LEFT_BRACKET      &kp RIGHT_BRACKET                      &kp ASTERISK    &kp N4  &kp N5  &kp N6  &kp SLASH
-&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &kp LESS_THAN         &kp GREATER_THAN                       &kp UNDERSCORE  &kp N1  &kp N2  &kp N3  &kp EQUAL
-&none         &trans          &none         &kp PERIOD            &kp COMMA              &trans  &trans  &kp N0                                  &none
+&kp GRAVE             &bt BT_CLR_ALL  &bt_in_out    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp PLUS        &kp N7  &kp N8  &kp N9  &ht UNDERSCORE MINUS
+&kt NON_US_BACKSLASH  &none           &none         &kp LEFT_BRACKET      &kp RIGHT_BRACKET                      &kp ASTERISK    &kp N4  &kp N5  &kp N6  &kp SLASH
+&bt BT_SEL 0          &bt BT_SEL 1    &bt BT_SEL 2  &kp LESS_THAN         &kp GREATER_THAN                       &kp UNDERSCORE  &kp N1  &kp N2  &kp N3  &kp EQUAL
+&trans                &trans          &trans        &kp PERIOD            &kp COMMA              &trans  &trans  &kp N0                                  &none
             >;
 
             label = "괄호&num";
@@ -307,10 +307,10 @@
         osl_layer {
             label = "OSL";
             bindings = <
-&none          &kp F23           &kp F22           &kp LG(R)         &kp LS(F2)                    &none   &none  &none  &none  &none
-&kp LC(GRAVE)  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LS(F3)                    &none   &none  &none  &none  &none
-&kp LC(GRAVE)  &kp F19           &kp F20           &kp F18           &kp LG(HOME)                  &none   &none  &none  &none  &none
-&kp F21        &trans            &trans            &trans            &trans        &trans  &trans  &trans                       &trans
+&none          &kp F23           &kp F22           &kp LG(R)         &kp LS(F2)                    &kp GRAVE         &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp LC(GRAVE)  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LS(F3)                    &kp LEFT_BRACKET  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp RIGHT_BRACKET
+&kp F21        &kp F19           &kp F20           &kp F18           &kp LG(HOME)                  &kp LESS_THAN     &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp GREATER_THAN
+&trans         &trans            &trans            &trans            &trans        &trans  &trans  &trans                                                                 &kt UNDERSCORE
             >;
         };
 

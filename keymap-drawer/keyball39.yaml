@@ -83,7 +83,7 @@ layers:
   num:
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - BT CLR ALL
   - (
   - )
   - +
@@ -111,9 +111,9 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '=', s: +}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$', type: held}
   - .
   - {t: ',', s: <}
   - {t: '$$mdi:transfer$$', type: trans}

@@ -1,11 +1,11 @@
 layout: {zmk_keyboard: keyball39}
 layers:
   QWERTY:
-  - Q
-  - W
-  - E
-  - R
-  - T
+  - {t: Q, s: '1'}
+  - {t: W, s: '2'}
+  - {t: E, s: '3'}
+  - {t: R, s: '4'}
+  - {t: T, s: '5'}
   - Y
   - U
   - I

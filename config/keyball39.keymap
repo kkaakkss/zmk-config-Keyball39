@@ -113,6 +113,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
+
+        Ralt {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <16 18>;
+        };
     };
 
     keymap {

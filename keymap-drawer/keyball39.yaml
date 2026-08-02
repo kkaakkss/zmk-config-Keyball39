@@ -350,6 +350,7 @@ combos:
   l: [QWERTY]
 - p: [16, 18]
   k: $$mdi:apple-keyboard-option$$
+  l: [QWERTY]
 - p: [11, 12, 13]
   k: {t: OSL, h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]

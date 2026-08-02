@@ -34,43 +34,43 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - LEFT WIN
   - '7'
-  - NUM_NAVI
+  - NAVI
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - NUM_NAVI
+  - NAVI
   - $$mdi:apple-keyboard-shift$$
-  NUM_NAVI:
+  NAVI:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - (
+  - F2
+  - F3
+  - F4
+  - F5
   - (
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - )
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '4'
-  - {t: '5', s: '%'}
-  - '6'
+  - PG UP
+  - Ctl+A
+  - Ctl+S
+  - Ctl+PG UP
+  - PgDn
   - {t: '[', s: '{'}
   - {t: '[', s: '{'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: ']', s: '}'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '1'
-  - '2'
-  - '3'
-  - <
+  - PgDn
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+B
   - <
   - Sft+HOME
   - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
   - Sft+END
-  - '>'
+  - Ctl+PG UP
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: '0', s: )}
@@ -79,7 +79,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+PgDn
   '7':
   - F2
   - F2
@@ -345,15 +345,15 @@ combos:
   k: {t: OSL, h: '$$mdi:gesture-tap-hold$$'}
 - p: [6, 7]
   k: Sft+HOME
-  l: [NUM_NAVI]
+  l: [NAVI]
 - p: [7, 7, 8]
   k: Sft+END
-  l: [NUM_NAVI]
+  l: [NAVI]
 - p: [16, 17]
   k: Ctl+$$mdi:arrow-left-bold$$
-  l: [NUM_NAVI]
+  l: [NAVI]
 - p: [17, 18]
   k: Ctl+$$mdi:arrow-right-bold$$
-  l: [NUM_NAVI]
+  l: [NAVI]
 - p: [23, 24]
   k: $$mdi:keyboard-space$$

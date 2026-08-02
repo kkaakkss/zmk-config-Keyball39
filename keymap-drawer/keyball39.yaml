@@ -334,7 +334,7 @@ combos:
 - p: [21, 22]
   k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [10, 11]
-  k: $$mdi:keyboard-tab$$
+  k: {t: '$$mdi:keyboard-tab$$', s: 'Sft+Alt+$$mdi:keyboard-tab$$'}
   l: [QWERTY]
 - p: [20, 21]
   k: $$mdi:apple-keyboard-caps$$

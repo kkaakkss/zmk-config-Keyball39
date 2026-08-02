@@ -518,6 +518,7 @@ rect.held, rect.combo.held {
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="42" y="85" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="47" y="89" height="18" width="18.0" class="combo tap glyph mdi:keyboard-tab"/>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="48" y="87" height="15" width="15.0" class="combo shifted glyph mdi:keyboard-tab"/>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="42" y="141" width="28" height="26" class="combo"/>

@@ -14,7 +14,7 @@ layers:
   - Q
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, s: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
@@ -52,16 +52,16 @@ layers:
   - END
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F2
-  - Ctl+S
-  - Ctl+PG UP
-  - {t: '$$mdi:apple-keyboard-shift$$', h: PgDn}
-  - {t: '[', s: '{'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '[', s: '{'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: PG UP, h: Ctl+PG UP}
-  - Ctl+A
+  - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+X
   - Ctl+C
   - Ctl+V

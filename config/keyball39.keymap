@@ -325,11 +325,13 @@
         tab2 {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
+            layers = <0>;
         };
 
         esc2 {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
+            layers = <0>;
         };
     };
 

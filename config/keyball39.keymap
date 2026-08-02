@@ -108,6 +108,11 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <20 21>;
         };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
     };
 
     keymap {

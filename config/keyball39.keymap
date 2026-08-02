@@ -48,6 +48,13 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        tap_dance: tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE";
+            #binding-cells = <0>;
+            bindings = <&none>;
+        };
     };
 
     macros {
@@ -56,6 +63,15 @@
             #binding-cells = <0>;
             bindings = <&kp LC(SPACE)>;
             label = "HIRAGANA";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <16 17>;
         };
     };
 

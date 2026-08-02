@@ -69,9 +69,24 @@
     combos {
         compatible = "zmk,combos";
 
-        enter {
+        enter_r {
             bindings = <&kp ENTER>;
             key-positions = <16 17>;
+        };
+
+        enter_l {
+            bindings = <&kp ENTER>;
+            key-positions = <12 13>;
+        };
+
+        del_r {
+            bindings = <&kp DELETE>;
+            key-positions = <7 8>;
+        };
+
+        del_l {
+            bindings = <&kp DELETE>;
+            key-positions = <22 23>;
         };
     };
 

@@ -182,13 +182,15 @@
             >;
         };
 
-        layer_7 {
+        num {
             bindings = <
 &kp GRAVE  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp PLUS        &kp N7  &kp N8  &kp N9  &kp MINUS
 &trans     &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET                      &kp ASTERISK    &kp N4  &kp N5  &kp N6  &kp SLASH
 &trans     &trans  &trans  &kp LESS_THAN         &kp GREATER_THAN                       &kp UNDERSCORE  &kp N1  &kp N2  &kp N3  &kp EQUAL
 &trans     &trans  &trans  &kp PERIOD            &kp COMMA              &trans  &trans  &kp N0                                  &none
             >;
+
+            label = "num";
         };
 
         mouse_layer {

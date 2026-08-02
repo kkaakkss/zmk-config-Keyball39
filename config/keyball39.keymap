@@ -11,6 +11,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 &lt {
@@ -67,9 +68,9 @@
             bindings = <&none>;
         };
 
-        ht: ht {
+        ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT";
+            label = "HOLD_TAP";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -83,6 +84,13 @@
             #binding-cells = <0>;
             bindings = <&kp LC(SPACE)>;
             label = "HIRAGANA";
+        };
+
+        bt_in_out: bluetooth {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &out OUT_TOG>;
+            label = "BLUETOOTH";
         };
     };
 
@@ -195,16 +203,16 @@
 &kp F2     &kp F2     &kp F3         &kp F4                    &kp F5                            &kp LEFT_PARENTHESIS  &kp HOME        &kp UP_ARROW   &kp END      &none
 &kp F2     &kp LC(S)  &kp LC(PG_UP)  &hm PAGE_DOWN LEFT_SHIFT  &kp LEFT_BRACKET                  &kp LEFT_BRACKET      &kp LEFT_ARROW  &kp DOWN       &kp RIGHT    &ht LC(PG_UP) PG_UP
 &kp LC(A)  &kp LC(X)  &kp LC(C)      &kp LC(V)                 &kp LC(B)                         &kp LESS_THAN         &kp LS(HOME)    &kp LS(ENTER)  &kp LS(END)  &ht LC(PAGE_DOWN) PAGE_DOWN
-&kp LC(Z)  &kp DOT    &trans         &trans                    &trans            &trans  &trans  &trans                                                            &none
+&kp LC(Z)  &trans     &trans         &trans                    &trans            &trans  &trans  &trans                                                            &none
             >;
         };
 
         num {
             bindings = <
-&kp GRAVE     &trans        &bt BT_CLR_ALL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp PLUS        &kp N7  &kp N8  &kp N9  &kp MINUS
-&trans        &trans        &trans          &kp LEFT_BRACKET      &kp RIGHT_BRACKET                      &kp ASTERISK    &kp N4  &kp N5  &kp N6  &kp SLASH
-&trans        &trans        &trans          &kp LESS_THAN         &kp GREATER_THAN                       &kp UNDERSCORE  &kp N1  &kp N2  &kp N3  &kp EQUAL
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &kp PERIOD            &kp COMMA              &trans  &trans  &kp N0                                  &none
+&none         &bt BT_CLR_ALL  &bt_in_out    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp PLUS        &kp N7  &kp N8  &kp N9  &ht UNDERSCORE MINUS
+&none         &none           &none         &kp LEFT_BRACKET      &kp RIGHT_BRACKET                      &kp ASTERISK    &kp N4  &kp N5  &kp N6  &kp SLASH
+&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &kp LESS_THAN         &kp GREATER_THAN                       &kp UNDERSCORE  &kp N1  &kp N2  &kp N3  &kp EQUAL
+&none         &trans          &none         &kp PERIOD            &kp COMMA              &trans  &trans  &kp N0                                  &none
             >;
 
             label = "num";

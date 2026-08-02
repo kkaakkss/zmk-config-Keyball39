@@ -321,6 +321,16 @@
             key-positions = <16 17 18>;
             layers = <4>;
         };
+
+        tab2 {
+            bindings = <&kp TAB>;
+            key-positions = <11 12>;
+        };
+
+        esc2 {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+        };
     };
 
     keymap {
@@ -329,10 +339,10 @@
         default_layer {
             label = "QWERTY";
             bindings = <
-&alt_q_1        &alt_w_2       &alt_e_3        &alt_r_4             &alt_t_5                            &kp Y        &kp U                &kp I           &kp O          &kp P
-&kp A           &hrm_L LALT S  &hrm_L LCTRL D  &hrm_L LEFT_SHIFT F  &kp G                               &kp H        &hrm_r LEFT_SHIFT J  &hrm_r LCTRL K  &hrm_r LALT L  &kp SEMICOLON
-&kp Z           &kp X          &kp C           &kp V                &kp B                               &kp N        &kp M                &kp COMMA       &kp DOT        &kp SLASH
-&kp LEFT_SHIFT  &kp CAPSLOCK   &mo 2           &lt 1 SPACE          &kp LCTRL  &kp LEFT_ALT  &kp SPACE  &lt 2 SPACE                                                      &kp RIGHT_ALT
+&alt_q_1        &alt_w_2      &alt_e_3        &alt_r_4             &alt_t_5                            &kp Y        &kp U                &kp I           &kp O    &kp P
+&kp A           &lt 7 S       &hrm_L LCTRL D  &hrm_L LEFT_SHIFT F  &kp G                               &kp H        &hrm_r LEFT_SHIFT J  &hrm_r LCTRL K  &lt 7 L  &kp SEMICOLON
+&kp Z           &kp X         &kp C           &kp V                &kp B                               &kp N        &kp M                &kp COMMA       &kp DOT  &kp SLASH
+&kp LEFT_SHIFT  &kp CAPSLOCK  &mo 2           &lt 1 SPACE          &kp LCTRL  &kp LEFT_ALT  &kp SPACE  &lt 2 SPACE                                                &kp RIGHT_ALT
             >;
         };
 
@@ -354,7 +364,7 @@
 &trans                &trans          &trans        &kp PERIOD            &kp COMMA              &trans  &trans  &kp N0                                  &none
             >;
 
-            label = "() & num";
+            label = "() & NUM";
         };
 
         osl_layer {
@@ -397,13 +407,13 @@
             >;
         };
 
-        symbol_layer {
-            label = "SYM";
+        pinky_layer {
+            label = "PINKY";
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT                  &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans                       &kp MINUS       &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp SQT
-&trans           &trans        &trans        &trans        &trans                       &kp UNDERSCORE  &kp PLUS       &trans            &trans                &kp NON_US_BACKSLASH
-&trans           &trans        &trans        &trans        &trans       &trans  &trans  &trans                                                                 &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans         &trans     &trans
+&trans  &kp Q   &kp A   &kp Z   &trans                  &trans  &kp P   &kp SEMICOLON  &kp SLASH  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans         &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                    &trans
             >;
         };
     };

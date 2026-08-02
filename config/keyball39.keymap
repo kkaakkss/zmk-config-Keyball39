@@ -266,6 +266,7 @@
         Ralt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <16 18>;
+            layers = <0>;
         };
 
         OSL {

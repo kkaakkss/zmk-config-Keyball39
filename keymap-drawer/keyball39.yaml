@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: keyball39}
 layers:
-  QWRT:
-  - {t: '`', h: SCROLL, s: '~'}
-  - {t: W, h: SNIPE}
+  QWERTY:
+  - Q
+  - W
   - E
   - R
   - T
@@ -10,8 +10,8 @@ layers:
   - U
   - I
   - O
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - Q
+  - P
+  - A
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
@@ -20,8 +20,8 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - P
-  - A
+  - {t: ;, s: ':'}
+  - Z
   - X
   - C
   - V
@@ -30,57 +30,57 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: ;, s: ':'}
-  - Z
+  - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - num
-  - NAVI
+  - $$mdi:apple-keyboard-caps$$
+  - 괄호&num
+  - F키&화살표
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - NAVI
-  - {t: /, s: '?'}
-  NAVI:
+  - {t: '$$mdi:keyboard-space$$', h: 괄호&num}
+  - $$mdi:apple-keyboard-option$$
+  F키&화살표:
   - F2
   - F2
   - F3
   - F4
   - F5
-  - (
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
+  - {t: PG UP, h: Ctl+PG UP}
+  - Ctl+A
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+F
+  - Ctl+H
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F2
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '[', s: '{'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: PG UP, h: Ctl+PG UP}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: PgDn, h: Ctl+PgDn}
+  - Ctl+Z
   - Ctl+X
   - Ctl+C
   - Ctl+V
   - Ctl+B
-  - <
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Sft+HOME
   - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
   - Sft+END
-  - {t: PgDn, h: Ctl+PgDn}
-  - Ctl+Z
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  num:
+  괄호&num:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - BT CLR ALL
   - '&bt_in_out'
@@ -118,7 +118,7 @@ layers:
   - {t: ',', s: <}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '0', s: )}
+  - {t: '0', s: ), type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   OSL:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -191,8 +191,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - SCROLL
+  - SNIPE
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-right-click-outline$$
@@ -201,37 +201,37 @@ layers:
   - OSL
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SCROLL:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -242,7 +242,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   SNIPE:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
@@ -272,7 +272,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -335,7 +335,7 @@ combos:
   k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [10, 11]
   k: $$mdi:keyboard-tab$$
-  l: [QWRT]
+  l: [QWERTY]
 - p: [20, 21]
   k: $$mdi:apple-keyboard-caps$$
 - p: [0, 1]
@@ -344,18 +344,18 @@ combos:
   k: $$mdi:apple-keyboard-option$$
 - p: [11, 12, 13]
   k: {t: OSL, h: '$$mdi:gesture-tap-hold$$'}
-  l: [QWRT]
+  l: [QWERTY]
 - p: [6, 7]
   k: Sft+HOME
-  l: [NAVI]
+  l: [F키&화살표]
 - p: [7, 7, 8]
   k: Sft+END
-  l: [NAVI]
+  l: [F키&화살표]
 - p: [16, 17]
   k: Ctl+$$mdi:arrow-left-bold$$
-  l: [NAVI]
+  l: [F키&화살표]
 - p: [17, 18]
   k: Ctl+$$mdi:arrow-right-bold$$
-  l: [NAVI]
+  l: [F키&화살표]
 - p: [23, 24]
   k: $$mdi:keyboard-space$$

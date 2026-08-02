@@ -93,6 +93,66 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35>;
         };
+
+        alt_q_1: alt_q_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_Q_1";
+            bindings = <&kp Q>, <&kp NUMBER_1>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
+
+        alt_w_2: alt_w_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_W_2";
+            bindings = <&kp W>, <&kp NUMBER_2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
+
+        alt_e_3: alt_e_3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_E_3";
+            bindings = <&kp E>, <&kp NUMBER_3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NEW_BEHAVIOR";
+            bindings = <&kp R>, <&kp NUMBER_4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
+
+        alt_r_4: alt_r_4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_R_4";
+            bindings = <&kp R>, <&kp NUMBER_4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
+
+        alt_t_5: alt_t_5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_T_5";
+            bindings = <&kp T>, <&kp NUMBER_5>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
     };
 
     macros {
@@ -207,7 +267,7 @@
         default_layer {
             label = "QWERTY";
             bindings = <
-&kp Q           &kp W          &kp E           &kp R                &kp T                               &kp Y        &kp U                &kp I           &kp O          &kp P
+&alt_q_1        &alt_w_2       &alt_e_3        &alt_r_4             &alt_t_5                            &kp Y        &kp U                &kp I           &kp O          &kp P
 &kp A           &hrm_L LALT S  &hrm_L LCTRL D  &hrm_L LEFT_SHIFT F  &kp G                               &kp H        &hrm_r LEFT_SHIFT J  &hrm_r LCTRL K  &hrm_r LALT L  &kp SEMICOLON
 &kp Z           &kp X          &kp C           &kp V                &kp B                               &kp N        &kp M                &kp COMMA       &kp DOT        &kp SLASH
 &kp LEFT_SHIFT  &kp CAPSLOCK   &mo 2           &mo 1                &kp LCTRL  &kp LEFT_ALT  &kp SPACE  &lt 2 SPACE                                                      &kp RIGHT_ALT

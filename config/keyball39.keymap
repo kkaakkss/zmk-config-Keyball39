@@ -147,6 +147,11 @@
             key-positions = <17 18>;
             layers = <1>;
         };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <23 24>;
+        };
     };
 
     keymap {

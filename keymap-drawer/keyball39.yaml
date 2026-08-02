@@ -33,14 +33,14 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-caps$$
-  - 괄호&num
-  - F키&화살표
+  - () & num
+  - {t: '$$mdi:keyboard-space$$', h: func & navi}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-space$$', h: 괄호&num}
+  - {t: '$$mdi:keyboard-space$$', h: () & num}
   - $$mdi:apple-keyboard-option$$
-  F키&화살표:
+  func & navi:
   - {t: '`', s: '~'}
   - F2
   - F3
@@ -80,7 +80,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  괄호&num:
+  () & num:
   - {t: '`', s: '~'}
   - BT CLR ALL
   - '&bt_in_out'
@@ -161,32 +161,32 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: _, h: toggle}
   MOUSE:
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - SCROLL
+  - $$mdi:arrow-up-bold$$
+  - SNIPE
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:pan-up$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PgUp
-  - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:mouse-right-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:pan-left$$
+  - $$mdi:pan-down$$
+  - $$mdi:pan-right$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PgDn
+  - '&alt_Lclick'
+  - '&alt_Rclick'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -194,44 +194,44 @@ layers:
   - SCROLL
   - SNIPE
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-right-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - OSL
+  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SCROLL:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -244,7 +244,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -272,7 +272,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -323,23 +323,31 @@ layers:
 combos:
 - p: [16, 17]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [QWERTY]
 - p: [12, 13]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [QWERTY]
 - p: [7, 8]
   k: $$mdi:backspace-reverse-outline$$
+  l: [QWERTY]
 - p: [22, 23]
   k: $$mdi:backspace-reverse-outline$$
+  l: [QWERTY]
 - p: [6, 7]
   k: {t: '$$mdi:backspace$$', type: backspace}
+  l: [QWERTY]
 - p: [21, 22]
   k: {t: '$$mdi:backspace$$', type: backspace}
+  l: [QWERTY]
 - p: [10, 11]
   k: {t: '$$mdi:keyboard-tab$$', s: 'Sft+Alt+$$mdi:keyboard-tab$$'}
   l: [QWERTY]
 - p: [20, 21]
   k: $$mdi:apple-keyboard-caps$$
+  l: [QWERTY]
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
+  l: [QWERTY]
 - p: [16, 18]
   k: $$mdi:apple-keyboard-option$$
 - p: [11, 12, 13]
@@ -347,15 +355,25 @@ combos:
   l: [QWERTY]
 - p: [6, 7]
   k: Sft+HOME
-  l: [F키&화살표]
+  l: [func & navi]
 - p: [7, 7, 8]
   k: Sft+END
-  l: [F키&화살표]
+  l: [func & navi]
 - p: [16, 17]
   k: Ctl+$$mdi:arrow-left-bold$$
-  l: [F키&화살표]
+  l: [func & navi]
 - p: [17, 18]
   k: Ctl+$$mdi:arrow-right-bold$$
-  l: [F키&화살표]
+  l: [func & navi]
 - p: [23, 24]
   k: $$mdi:keyboard-space$$
+  l: [QWERTY]
+- p: [16, 17]
+  k: $$mdi:mouse-left-click-outline$$
+  l: [MOUSE]
+- p: [17, 18]
+  k: $$mdi:mouse-right-click-outline$$
+  l: [MOUSE]
+- p: [16, 17, 18]
+  k: $$mdi:mouse-scroll-wheel$$
+  l: [MOUSE]

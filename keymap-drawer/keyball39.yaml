@@ -34,13 +34,13 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - LEFT WIN
   - $$mdi:apple-keyboard-option$$
-  - NUM
+  - NUM_NAVI
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - NUM
-  - {t: '$$mdi:backspace$$', h: SYM}
+  - $$mdi:keyboard-space$$
+  - NUM_NAVI
   - $$mdi:apple-keyboard-shift$$
-  NUM:
+  NUM_NAVI:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -77,8 +77,8 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   SYM:
   - '!'
@@ -118,7 +118,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   FUN:
   - F1
@@ -132,9 +132,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F5
-  - F6
-  - F7
-  - F8
+  - {t: F6, type: held}
+  - {t: F7, type: held}
+  - {t: F8, type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -301,3 +301,19 @@ combos:
   k: $$mdi:keyboard-esc$$
 - p: [16, 18]
   k: $$mdi:apple-keyboard-option$$
+- p: [11, 12, 13]
+  k: {t: FUN, h: '$$mdi:gesture-tap-hold$$'}
+- p: [6, 7]
+  k: Sft+HOME
+  l: [NUM_NAVI]
+- p: [7, 7, 8]
+  k: Sft+END
+  l: [NUM_NAVI]
+- p: [16, 17]
+  k: Ctl+$$mdi:arrow-left-bold$$
+  l: [NUM_NAVI]
+- p: [17, 18]
+  k: Ctl+$$mdi:arrow-right-bold$$
+  l: [NUM_NAVI]
+- p: [23, 24]
+  k: $$mdi:keyboard-space$$

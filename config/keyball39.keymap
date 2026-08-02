@@ -88,6 +88,26 @@
             bindings = <&kp DELETE>;
             key-positions = <22 23>;
         };
+
+        bsp_r {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <6 7>;
+        };
+
+        bsp_l {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <21 22>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+        };
+
+        Caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <20 21>;
+        };
     };
 
     keymap {

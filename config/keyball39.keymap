@@ -153,6 +153,15 @@
             mods = <(MOD_LALT)>;
             keep-mods = <(MOD_LALT)>;
         };
+
+        as_tab: as_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AS_TAB";
+            bindings = <&kp TAB>, <&kp LS(LA(TAB))>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT)>;
+        };
     };
 
     macros {
@@ -204,8 +213,8 @@
             key-positions = <21 22>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
+        as_tab {
+            bindings = <&as_tab>;
             key-positions = <10 11>;
             layers = <0>;
         };

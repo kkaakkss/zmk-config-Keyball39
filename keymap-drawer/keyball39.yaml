@@ -289,3 +289,15 @@ combos:
   k: $$mdi:backspace-reverse-outline$$
 - p: [22, 23]
   k: $$mdi:backspace-reverse-outline$$
+- p: [6, 7]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+- p: [21, 22]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+- p: [10, 11]
+  k: $$mdi:keyboard-tab$$
+- p: [20, 21]
+  k: $$mdi:apple-keyboard-caps$$
+- p: [0, 1]
+  k: $$mdi:keyboard-esc$$
+- p: [16, 18]
+  k: $$mdi:apple-keyboard-option$$

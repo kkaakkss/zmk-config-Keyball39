@@ -356,7 +356,7 @@ combos:
 - p: [6, 7]
   k: Sft+HOME
   l: [func & navi]
-- p: [7, 7, 8]
+- p: [7, 8]
   k: Sft+END
   l: [func & navi]
 - p: [16, 17]

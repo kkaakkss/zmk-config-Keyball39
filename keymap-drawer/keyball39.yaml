@@ -50,7 +50,7 @@ layers:
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - PG UP
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F2
   - Ctl+S
   - Ctl+PG UP
@@ -60,7 +60,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - PgDn
+  - {t: PG UP, h: Ctl+PG UP}
   - Ctl+A
   - Ctl+X
   - Ctl+C
@@ -70,7 +70,7 @@ layers:
   - Sft+HOME
   - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
   - Sft+END
-  - Ctl+PG UP
+  - {t: PgDn, h: Ctl+PgDn}
   - Ctl+Z
   - {t: ., s: '>'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -79,7 +79,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
-  - Ctl+PgDn
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   num:
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}

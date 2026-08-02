@@ -41,7 +41,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: 괄호&num}
   - $$mdi:apple-keyboard-option$$
   F키&화살표:
-  - F2
+  - {t: '`', s: '~'}
   - F2
   - F3
   - F4
@@ -51,8 +51,8 @@ layers:
   - $$mdi:arrow-up-bold$$
   - END
   - {t: PG UP, h: Ctl+HOME}
-  - Ctl+A
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - \
+  - Ctl+S
   - Ctl+PgDn
   - Ctl+PgUp
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -81,7 +81,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   괄호&num:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '`', s: '~'}
   - BT CLR ALL
   - '&bt_in_out'
   - (
@@ -91,7 +91,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '-', h: _, s: _}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: \, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '[', s: '{'}
@@ -111,9 +111,9 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '=', s: +}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - .
   - {t: ',', s: <}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -126,32 +126,31 @@ layers:
   - F22
   - Gui+R
   - Sft+F2
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '`', s: '~'}
+  - '&'
+  - '*'
+  - (
+  - )
   - {t: Ctl+`, s: Ctl+~}
   - {t: Gui+1, type: held}
   - {t: Gui+2, type: held}
   - {t: Gui+3, type: held}
   - Sft+F3
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Ctl+`, s: Ctl+~}
+  - {t: '[', s: '{'}
+  - $
+  - '%'
+  - ^
+  - {t: ']', s: '}'}
+  - F21
   - F19
   - F20
   - F18
   - Gui+HOME
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F21
+  - <
+  - '!'
+  - '@'
+  - '#'
+  - '>'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -160,6 +159,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: _, h: toggle}
   MOUSE:
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}

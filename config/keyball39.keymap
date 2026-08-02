@@ -123,6 +123,30 @@
             bindings = <&sl 3>;
             key-positions = <11 12 13>;
         };
+
+        home_shift {
+            bindings = <&kp LS(HOME)>;
+            key-positions = <6 7>;
+            layers = <1>;
+        };
+
+        end_shift {
+            bindings = <&kp LS(END)>;
+            key-positions = <7 7 8>;
+            layers = <1>;
+        };
+
+        left_ctr {
+            bindings = <&kp LC(LEFT_ARROW)>;
+            key-positions = <16 17>;
+            layers = <1>;
+        };
+
+        right_ctrl {
+            bindings = <&kp LC(RIGHT)>;
+            key-positions = <17 18>;
+            layers = <1>;
+        };
     };
 
     keymap {

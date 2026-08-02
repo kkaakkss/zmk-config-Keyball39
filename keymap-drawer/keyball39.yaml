@@ -50,17 +50,17 @@ layers:
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - {t: PG UP, h: Ctl+PG UP}
+  - {t: PG UP, h: Ctl+HOME}
   - Ctl+A
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+F
-  - Ctl+H
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+PgDn
+  - Ctl+PgUp
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: PgDn, h: Ctl+PgDn}
+  - {t: PgDn, h: Ctl+END}
   - Ctl+Z
   - Ctl+X
   - Ctl+C

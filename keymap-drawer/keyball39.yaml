@@ -33,7 +33,7 @@ layers:
   - {t: ;, s: ':'}
   - Z
   - $$mdi:apple-keyboard-shift$$
-  - '7'
+  - num
   - NAVI
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
@@ -80,7 +80,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
   - Ctl+PgDn
-  '7':
+  num:
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

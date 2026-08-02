@@ -120,32 +120,32 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  FUN:
-  - F1
-  - F2
-  - F3
-  - F4
+  OSL:
+  - {t: Ctl+`, s: Ctl+~}
+  - F23
+  - F22
+  - Gui+R
+  - Sft+F2
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F5
-  - {t: F6, type: held}
-  - {t: F7, type: held}
-  - {t: F8, type: held}
+  - {t: Gui+1, type: held}
+  - {t: Gui+2, type: held}
+  - {t: Gui+3, type: held}
+  - Sft+F3
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F9
-  - F10
-  - F11
-  - F12
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F21
+  - F19
+  - F20
+  - F18
+  - Gui+HOME
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -198,7 +198,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - FUN
+  - OSL
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SCROLL:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -302,7 +302,7 @@ combos:
 - p: [16, 18]
   k: $$mdi:apple-keyboard-option$$
 - p: [11, 12, 13]
-  k: {t: FUN, h: '$$mdi:gesture-tap-hold$$'}
+  k: {t: OSL, h: '$$mdi:gesture-tap-hold$$'}
 - p: [6, 7]
   k: Sft+HOME
   l: [NUM_NAVI]

@@ -379,5 +379,7 @@ combos:
   l: [MOUSE]
 - p: [11, 12]
   k: $$mdi:keyboard-tab$$
+  l: [QWERTY]
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$
+  l: [QWERTY]

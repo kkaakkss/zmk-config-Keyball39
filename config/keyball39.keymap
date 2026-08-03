@@ -334,6 +334,12 @@
             key-positions = <1 2>;
             layers = <0>;
         };
+
+        winL {
+            bindings = <&kp LG(L)>;
+            key-positions = <1 2 0>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -350,12 +356,12 @@
         };
 
         navi_layer {
-            label = "func & navi";
+            label = "func&navi";
             bindings = <
-&kp GRAVE             &kp F2     &kp F3             &kp F4           &kp F5                     &none   &kp HOME        &kp UP_ARROW   &kp END      &ht LC(HOME) PG_UP
-&kp NON_US_BACKSLASH  &kp LC(S)  &kp LC(PAGE_DOWN)  &kp LC(PAGE_UP)  &none                      &none   &kp LEFT_ARROW  &kp DOWN       &kp RIGHT    &ht LC(END) PAGE_DOWN
-&kp LC(Z)             &kp LC(X)  &kp LC(C)          &kp LC(V)        &kp LC(B)                  &none   &kp LS(HOME)    &kp LS(ENTER)  &kp LS(END)  &none
-&trans                &trans     &trans             &trans           &trans     &trans  &trans  &trans                                              &none
+&kp F2                &kp F2     &kp F3         &kp F4             &kp F5                     &none   &kp HOME        &kp UP_ARROW   &kp END      &ht LC(HOME) PG_UP
+&kp NON_US_BACKSLASH  &kp LC(S)  &kp LC(PG_UP)  &kp LC(PAGE_DOWN)  &none                      &none   &kp LEFT_ARROW  &kp DOWN       &kp RIGHT    &ht LC(END) PAGE_DOWN
+&kp LC(Z)             &kp LC(X)  &kp LC(C)      &kp LC(V)          &kp LC(B)                  &none   &kp LS(HOME)    &kp LS(ENTER)  &kp LS(END)  &none
+&trans                &trans     &trans         &trans             &trans     &trans  &trans  &trans                                              &none
             >;
         };
 
@@ -367,13 +373,13 @@
 &trans                &trans          &trans        &kp PERIOD            &kp COMMA              &trans  &trans  &kp N0                                  &none
             >;
 
-            label = "() & NUM";
+            label = "[ ] & no.";
         };
 
         osl_layer {
             label = "OSL";
             bindings = <
-&none          &kp F23           &kp F22           &kp LG(R)         &kp LS(F2)                    &kp GRAVE         &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp LC(GRAVE)  &kp F23           &kp F22           &kp LG(R)         &kp LS(F2)                    &kp GRAVE         &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp LC(GRAVE)  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LS(F3)                    &kp LEFT_BRACKET  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp RIGHT_BRACKET
 &kp F21        &kp F19           &kp F20           &kp F18           &kp LG(HOME)                  &kp LESS_THAN     &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp GREATER_THAN
 &trans         &trans            &trans            &trans            &trans        &trans  &trans  &trans                                                                 &kt UNDERSCORE
@@ -381,12 +387,12 @@
         };
 
         mouse_layer {
-            label = "MOUSE";
+            label = "Mouse";
             bindings = <
-&none  &mo 5           &kp UP_ARROW    &mo 6        &none                              &none      &none           &msc SCRL_UP    &none            &none
-&none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT    &none                              &none      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
-&none  &none           &none           &alt_Lclick  &alt_Rclick                        &none      &none           &none           &none            &none
-&mo 5  &mo 6           &trans          &mkp MCLK    &mkp LCLK    &mkp RCLK  &mkp LCLK  &mkp RCLK                                                   &none
+&none  &none  &none        &none        &none                            &none      &none      &msc SCRL_UP  &none      &none
+&none  &none  &mo 5        &mo 6        &none                            &none      &mkp LCLK  &mkp RCLK     &mkp MCLK  &none
+&none  &none  &alt_Lclick  &alt_Rclick  &none                            &none      &mkp MB4   &mkp MB5      &none      &none
+&none  &none  &trans       &mkp MCLK    &mkp LCLK  &mkp RCLK  &mkp LCLK  &mkp RCLK                                      &none
             >;
         };
 

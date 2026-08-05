@@ -212,13 +212,13 @@
         enter_r {
             bindings = <&kp ENTER>;
             key-positions = <16 17>;
-            layers = <0 2 8>;
+            layers = <0 8 2>;
         };
 
         enter_l {
             bindings = <&kp ENTER>;
             key-positions = <12 13>;
-            layers = <0 2 8>;
+            layers = <0 8 2>;
         };
 
         del_r {
@@ -230,19 +230,19 @@
         del_l {
             bindings = <&kp DELETE>;
             key-positions = <22 23>;
-            layers = <0 1 2>;
+            layers = <0 1 8>;
         };
 
         bsp_r {
             bindings = <&kp BACKSPACE>;
             key-positions = <6 7>;
-            layers = <0 2 8>;
+            layers = <0 8 2>;
         };
 
         bsp_l {
             bindings = <&kp BACKSPACE>;
             key-positions = <21 22>;
-            layers = <0 1 8>;
+            layers = <0 1 2>;
         };
 
         as_tab {
@@ -260,7 +260,7 @@
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
-            layers = <0 2 8>;
+            layers = <0 8 2>;
         };
 
         Ralt {
@@ -302,7 +302,7 @@
         space {
             bindings = <&kp SPACE>;
             key-positions = <23 24>;
-            layers = <0 2 8>;
+            layers = <0 8 2>;
         };
 
         mouse_m {
@@ -314,13 +314,13 @@
         tab2 {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
-            layers = <0 8 2>;
+            layers = <0 2 8>;
         };
 
         esc2 {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
-            layers = <0 2 8>;
+            layers = <0 8 2>;
         };
 
         winL {
@@ -339,29 +339,28 @@
 &alt_q_1        &alt_w_2      &alt_e_3        &alt_r_4             &alt_t_5                            &kp Y        &kp U                &kp I           &kp O    &kp P
 &kp A           &lt 7 S       &hrm_L LCTRL D  &hrm_L LEFT_SHIFT F  &kp G                               &kp H        &hrm_r LEFT_SHIFT J  &hrm_r LCTRL K  &lt 7 L  &kp SEMICOLON
 &kp Z           &kp X         &kp C           &kp V                &kp B                               &kp N        &kp M                &kp COMMA       &kp DOT  &kp SLASH
-&kp LEFT_SHIFT  &kp CAPSLOCK  &mo 2           &lt 1 SPACE          &kp LCTRL  &kp LEFT_ALT  &kp SPACE  &lt 8 SPACE                                                &kp RIGHT_ALT
+&kp LEFT_SHIFT  &kp CAPSLOCK  &mo 2           &lt 1 SPACE          &kp LCTRL  &kp LEFT_ALT  &kp SPACE  &lt 2 SPACE                                                &kp RIGHT_ALT
             >;
         };
 
-        navi_layer {
-            label = "func&navi";
+        f_grave_layer {
+            label = "`_f & nav";
             bindings = <
-&kp F2                &kp F2     &kp F3         &kp F4             &kp F5                     &none   &kp HOME        &kp UP_ARROW   &kp END      &ht LC(HOME) PG_UP
+&kp GRAVE             &kp F2     &kp F3         &kp F4             &kp F5                     &none   &kp HOME        &kp UP_ARROW   &kp END      &ht LC(HOME) PG_UP
 &kp NON_US_BACKSLASH  &kp LC(S)  &kp LC(PG_UP)  &kp LC(PAGE_DOWN)  &none                      &none   &kp LEFT_ARROW  &kp DOWN       &kp RIGHT    &ht LC(END) PAGE_DOWN
 &kp LC(Z)             &kp LC(X)  &kp LC(C)      &kp LC(V)          &kp LC(B)                  &none   &kp LS(HOME)    &kp LS(ENTER)  &kp LS(END)  &none
 &trans                &trans     &trans         &trans             &trans     &trans  &trans  &trans                                              &none
             >;
         };
 
-        bracket_num {
+        num_navi_layer {
+            label = "no. & navi";
             bindings = <
-&kp GRAVE             &bt BT_CLR_ALL  &bt_in_out    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp PLUS        &kp N7  &kp N8  &kp N9  &ht UNDERSCORE MINUS
-&kt NON_US_BACKSLASH  &none           &none         &kp LEFT_BRACKET      &kp RIGHT_BRACKET                      &kp ASTERISK    &kp N4  &kp N5  &kp N6  &kp SLASH
-&bt BT_SEL 0          &bt BT_SEL 1    &bt BT_SEL 2  &kp LESS_THAN         &kp GREATER_THAN                       &kp UNDERSCORE  &kp N1  &kp N2  &kp N3  &kp EQUAL
-&trans                &trans          &trans        &kp PERIOD            &kp COMMA              &trans  &trans  &kp N0                                  &none
+&ht MINUS PLUS      &kp N7     &kp N8  &kp N9   &ht LESS_THAN LEFT_PARENTHESIS                  &ht GREATER_THAN RIGHT_PARENTHESIS  &kp HOME        &kp UP_ARROW   &kp END      &ht LC(HOME) PG_UP
+&ht SLASH ASTERISK  &kp N4     &kp N5  &kp N6   &ht LEFT_BRACE LEFT_BRACKET                     &ht RIGHT_BRACE RIGHT_BRACKET       &kp LEFT_ARROW  &kp DOWN       &kp RIGHT    &ht LC(END) PAGE_DOWN
+&kp EQUAL           &kp N1     &kp N2  &kp N3   &trans                                          &none                               &kp LS(HOME)    &kp LS(ENTER)  &kp LS(END)  &to 2
+&trans              &kp COMMA  &kp N0  &kp DOT  &trans                          &trans  &trans  &trans                                                                          &to 0
             >;
-
-            label = "[ ] & no.";
         };
 
         osl_layer {
@@ -377,10 +376,10 @@
         mouse_layer {
             label = "Mouse";
             bindings = <
-&none  &none  &none        &none        &none                            &none      &none      &msc SCRL_UP  &none      &none
-&none  &none  &mo 5        &mo 6        &none                            &none      &mkp LCLK  &mkp RCLK     &mkp MCLK  &none
-&none  &none  &alt_Lclick  &alt_Rclick  &none                            &none      &mkp MB4   &mkp MB5      &none      &none
-&none  &none  &trans       &mkp MCLK    &mkp LCLK  &mkp RCLK  &mkp LCLK  &mkp RCLK                                      &none
+&none  &none  &none        &none        &none                            &none      &none      &none      &none      &none
+&none  &none  &mo 5        &mo 6        &none                            &none      &mkp LCLK  &mkp RCLK  &mkp MCLK  &none
+&none  &none  &alt_Lclick  &alt_Rclick  &none                            &none      &mkp MB4   &mkp MB5   &none      &none
+&none  &none  &trans       &mkp MCLK    &mkp LCLK  &mkp RCLK  &mkp LCLK  &mkp RCLK                                   &none
             >;
         };
 
@@ -414,14 +413,15 @@
             >;
         };
 
-        num_navi_layer {
-            label = "no.&navi";
+        bracket_num {
             bindings = <
-&kp ESC  &kp N7   &kp N8  &kp N9  &kp BSPC                   &none   &kp HOME        &kp UP_ARROW   &kp END      &ht LC(HOME) PG_UP
-&kp ESC  &kp N4   &kp N5  &kp N6  &none                      &none   &kp LEFT_ARROW  &kp DOWN       &kp RIGHT    &ht LC(END) PAGE_DOWN
-&kp ESC  &kp N1   &kp N2  &kp N3  &kp LC(B)                  &none   &kp LS(HOME)    &kp LS(ENTER)  &kp LS(END)  &tog 8
-&trans   &kp DOT  &kp N0  &trans  &trans     &trans  &trans  &trans                                              &to 0
+&kp GRAVE             &bt BT_CLR_ALL  &bt_in_out    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp PLUS        &kp N7  &kp N8  &kp N9  &ht UNDERSCORE MINUS
+&kt NON_US_BACKSLASH  &none           &none         &kp LEFT_BRACKET      &kp RIGHT_BRACKET                      &kp ASTERISK    &kp N4  &kp N5  &kp N6  &kp SLASH
+&bt BT_SEL 0          &bt BT_SEL 1    &bt BT_SEL 2  &kp LESS_THAN         &kp GREATER_THAN                       &kp UNDERSCORE  &kp N1  &kp N2  &kp N3  &kp EQUAL
+&trans                &trans          &trans        &kp PERIOD            &kp COMMA              &trans  &trans  &kp N0                                  &none
             >;
+
+            label = "[ ] & no.";
         };
     };
 };

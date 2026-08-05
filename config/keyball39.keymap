@@ -162,6 +162,16 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LALT)>;
         };
+
+        ctrl_guard_alt_w: ctrl_guard_alt_w {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CTRL_GUARD_ALT_W";
+            bindings = <&alt_w_2>, <&kp W>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
     };
 
     macros {
@@ -336,15 +346,15 @@
         default_layer {
             label = "QWERTY";
             bindings = <
-&alt_q_1        &alt_w_2      &alt_e_3        &alt_r_4             &alt_t_5                            &kp Y        &kp U                &kp I           &kp O    &kp P
-&kp A           &lt 7 S       &hrm_L LCTRL D  &hrm_L LEFT_SHIFT F  &kp G                               &kp H        &hrm_r LEFT_SHIFT J  &hrm_r LCTRL K  &lt 7 L  &kp SEMICOLON
-&kp Z           &kp X         &kp C           &kp V                &kp B                               &kp N        &kp M                &kp COMMA       &kp DOT  &kp SLASH
-&kp LEFT_SHIFT  &kp CAPSLOCK  &mo 2           &lt 1 SPACE          &kp LCTRL  &kp LEFT_ALT  &kp SPACE  &lt 2 SPACE                                                &kp RIGHT_ALT
+&alt_q_1        &ctrl_guard_alt_w  &alt_e_3        &alt_r_4             &alt_t_5                            &kp Y        &kp U                &kp I           &kp O    &kp P
+&kp A           &lt 7 S            &hrm_L LCTRL D  &hrm_L LEFT_SHIFT F  &kp G                               &kp H        &hrm_r LEFT_SHIFT J  &hrm_r LCTRL K  &lt 7 L  &kp SEMICOLON
+&kp Z           &kp X              &kp C           &kp V                &kp B                               &kp N        &kp M                &kp COMMA       &kp DOT  &kp SLASH
+&kp LEFT_SHIFT  &kp CAPSLOCK       &mo 2           &lt 1 SPACE          &kp LCTRL  &kp LEFT_ALT  &kp SPACE  &lt 2 SPACE                                                &kp RIGHT_ALT
             >;
         };
 
         f_grave_layer {
-            label = "`_f & nav";
+            label = "`\f & nav";
             bindings = <
 &kp GRAVE             &kp F2     &kp F3         &kp F4             &kp F5                     &none   &kp HOME        &kp UP_ARROW   &kp END      &ht LC(HOME) PG_UP
 &kp NON_US_BACKSLASH  &kp LC(S)  &kp LC(PG_UP)  &kp LC(PAGE_DOWN)  &none                      &none   &kp LEFT_ARROW  &kp DOWN       &kp RIGHT    &ht LC(END) PAGE_DOWN
@@ -358,7 +368,7 @@
             bindings = <
 &ht MINUS PLUS      &kp N7     &kp N8  &kp N9   &ht LESS_THAN LEFT_PARENTHESIS                  &ht GREATER_THAN RIGHT_PARENTHESIS  &kp HOME        &kp UP_ARROW   &kp END      &ht LC(HOME) PG_UP
 &ht SLASH ASTERISK  &kp N4     &kp N5  &kp N6   &ht LEFT_BRACE LEFT_BRACKET                     &ht RIGHT_BRACE RIGHT_BRACKET       &kp LEFT_ARROW  &kp DOWN       &kp RIGHT    &ht LC(END) PAGE_DOWN
-&kp EQUAL           &kp N1     &kp N2  &kp N3   &trans                                          &none                               &kp LS(HOME)    &kp LS(ENTER)  &kp LS(END)  &to 2
+&kp EQUAL           &kp N1     &kp N2  &kp N3   &none                                           &none                               &kp LS(HOME)    &kp LS(ENTER)  &kp LS(END)  &to 2
 &trans              &kp COMMA  &kp N0  &kp DOT  &trans                          &trans  &trans  &trans                                                                          &to 0
             >;
         };

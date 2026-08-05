@@ -346,10 +346,10 @@
         default_layer {
             label = "QWERTY";
             bindings = <
-&alt_q_1        &ctrl_guard_alt_w  &alt_e_3        &alt_r_4             &alt_t_5                            &kp Y        &kp U                &kp I           &kp O    &kp P
-&kp A           &lt 7 S            &hrm_L LCTRL D  &hrm_L LEFT_SHIFT F  &kp G                               &kp H        &hrm_r LEFT_SHIFT J  &hrm_r LCTRL K  &lt 7 L  &kp SEMICOLON
-&kp Z           &kp X              &kp C           &kp V                &kp B                               &kp N        &kp M                &kp COMMA       &kp DOT  &kp SLASH
-&kp LEFT_SHIFT  &kp CAPSLOCK       &mo 2           &lt 1 SPACE          &kp LCTRL  &kp LEFT_ALT  &kp SPACE  &lt 2 SPACE                                                &kp RIGHT_ALT
+&alt_q_1        &ctrl_guard_alt_w  &alt_e_3  &alt_r_4             &alt_t_5                            &kp Y        &kp U                &kp I      &kp O    &kp P
+&kp A           &lt 2 S            &lt 7 D   &hrm_L LEFT_SHIFT F  &kp G                               &kp H        &hrm_r LEFT_SHIFT J  &lt 7 K    &lt 2 L  &kp SEMICOLON
+&kp Z           &kp X              &kp C     &kp V                &kp B                               &kp N        &kp M                &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_SHIFT  &kp CAPSLOCK       &mo 2     &lt 1 SPACE          &kp LCTRL  &kp LEFT_ALT  &kp SPACE  &lt 2 SPACE                                           &kp RIGHT_ALT
             >;
         };
 

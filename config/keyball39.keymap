@@ -124,16 +124,6 @@
             keep-mods = <(MOD_LALT)>;
         };
 
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NEW_BEHAVIOR";
-            bindings = <&kp R>, <&kp NUMBER_4>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
-            keep-mods = <(MOD_LALT)>;
-        };
-
         alt_r_4: alt_r_4 {
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_R_4";
@@ -368,7 +358,7 @@
             bindings = <
 &ht MINUS PLUS      &kp N7     &kp N8  &kp N9   &ht LESS_THAN LEFT_PARENTHESIS                  &ht GREATER_THAN RIGHT_PARENTHESIS  &kp HOME        &kp UP_ARROW   &kp END      &ht LC(HOME) PG_UP
 &ht SLASH ASTERISK  &kp N4     &kp N5  &kp N6   &ht LEFT_BRACE LEFT_BRACKET                     &ht RIGHT_BRACE RIGHT_BRACKET       &kp LEFT_ARROW  &kp DOWN       &kp RIGHT    &ht LC(END) PAGE_DOWN
-&kp EQUAL           &kp N1     &kp N2  &kp N3   &none                                           &none                               &kp LS(HOME)    &kp LS(ENTER)  &kp LS(END)  &to 2
+&kp EQUAL           &kp N1     &kp N2  &kp N3   &kp COMMA                                       &none                               &kp LS(HOME)    &kp LS(ENTER)  &kp LS(END)  &to 2
 &trans              &kp COMMA  &kp N0  &kp DOT  &trans                          &trans  &trans  &trans                                                                          &to 0
             >;
         };

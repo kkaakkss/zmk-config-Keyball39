@@ -33,15 +33,15 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-caps$$
-  - '[ ] & no.'
-  - {t: '$$mdi:keyboard-space$$', h: func&navi}
+  - no. & navi
+  - {t: '$$mdi:keyboard-space$$', h: '`_f & nav'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-space$$', h: no.&navi}
+  - {t: '$$mdi:keyboard-space$$', h: no. & navi}
   - $$mdi:apple-keyboard-option$$
-  func&navi:
-  - F2
+  '`_f & nav':
+  - {t: '`', s: '~'}
   - F2
   - F3
   - F4
@@ -80,46 +80,46 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  '[ ] & no.':
-  - {t: '`', s: '~'}
-  - BT CLR ALL
-  - '&bt_in_out'
-  - (
-  - )
-  - +
+  no. & navi:
+  - {t: +, h: '-'}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - {t: '-', h: _, s: _}
-  - {t: \, h: toggle}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - '*'
+  - {t: (, h: <}
+  - {t: ), h: '>'}
+  - HOME
+  - $$mdi:arrow-up-bold$$
+  - END
+  - {t: PG UP, h: Ctl+HOME}
+  - {t: '*', h: /}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
-  - {t: /, s: '?'}
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - <
-  - '>'
-  - _
+  - {t: '[', h: '{', s: '{'}
+  - {t: ']', h: '}', s: '}'}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: PgDn, h: Ctl+END}
+  - {t: '=', s: +}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - .
-  - {t: ',', s: <}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '0', s: )}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Sft+HOME
+  - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
+  - Sft+END
+  - {t: no. & navi, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ',', s: <}
+  - {t: '0', s: ), type: held}
+  - {t: ., s: '>'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
+  - {t: QWERTY, h: toggle}
   OSL:
   - {t: Ctl+`, s: Ctl+~}
   - F23
@@ -168,7 +168,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:pan-up$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -320,65 +320,65 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  no.&navi:
-  - $$mdi:keyboard-esc$$
+  '[ ] & no.':
+  - {t: '`', s: '~'}
+  - BT CLR ALL
+  - '&bt_in_out'
+  - (
+  - )
+  - +
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '-', h: _, s: _}
+  - {t: \, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - HOME
-  - $$mdi:arrow-up-bold$$
-  - END
-  - {t: PG UP, h: Ctl+HOME}
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - '*'
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
-  - {t: PgDn, h: Ctl+END}
-  - $$mdi:keyboard-esc$$
+  - {t: /, s: '?'}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - <
+  - '>'
+  - _
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - Ctl+B
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Sft+HOME
-  - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
-  - Sft+END
-  - {t: no.&navi, h: toggle}
+  - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ., s: '>'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - .
+  - {t: ',', s: <}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '0', s: )}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: QWERTY, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
 - p: [16, 17]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [QWERTY, '[ ] & no.', no.&navi]
+  l: [QWERTY, '[ ] & no.', no. & navi]
 - p: [12, 13]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [QWERTY, '[ ] & no.', no.&navi]
+  l: [QWERTY, '[ ] & no.', no. & navi]
 - p: [7, 8]
   k: $$mdi:backspace-reverse-outline$$
   l: [QWERTY]
 - p: [22, 23]
   k: $$mdi:backspace-reverse-outline$$
-  l: [QWERTY, func&navi, '[ ] & no.']
+  l: [QWERTY, '`_f & nav', '[ ] & no.']
 - p: [6, 7]
   k: {t: '$$mdi:backspace$$', type: backspace}
-  l: [QWERTY, '[ ] & no.', no.&navi]
+  l: [QWERTY, '[ ] & no.', no. & navi]
 - p: [21, 22]
   k: {t: '$$mdi:backspace$$', type: backspace}
-  l: [QWERTY, func&navi, no.&navi]
+  l: [QWERTY, '`_f & nav', no. & navi]
 - p: [10, 11]
   k: {t: '$$mdi:keyboard-tab$$', s: 'Sft+Alt+$$mdi:keyboard-tab$$'}
   l: [QWERTY]
@@ -387,7 +387,7 @@ combos:
   l: [QWERTY]
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
-  l: [QWERTY, '[ ] & no.', no.&navi]
+  l: [QWERTY, '[ ] & no.', no. & navi]
 - p: [16, 18]
   k: $$mdi:apple-keyboard-option$$
   l: [QWERTY]
@@ -396,28 +396,28 @@ combos:
   l: [QWERTY]
 - p: [6, 7]
   k: Sft+HOME
-  l: [func&navi]
+  l: ['`_f & nav']
 - p: [8, 7]
   k: Sft+END
-  l: [func&navi]
+  l: ['`_f & nav']
 - p: [16, 17]
   k: Ctl+$$mdi:arrow-left-bold$$
-  l: [func&navi]
+  l: ['`_f & nav']
 - p: [17, 18]
   k: Ctl+$$mdi:arrow-right-bold$$
-  l: [func&navi]
+  l: ['`_f & nav']
 - p: [23, 24]
   k: $$mdi:keyboard-space$$
-  l: [QWERTY, '[ ] & no.', no.&navi]
+  l: [QWERTY, '[ ] & no.', no. & navi]
 - p: [16, 17, 18]
   k: $$mdi:mouse-scroll-wheel$$
   l: [Mouse]
 - p: [11, 12]
   k: $$mdi:keyboard-tab$$
-  l: [QWERTY, no.&navi, '[ ] & no.']
+  l: [QWERTY, no. & navi, '[ ] & no.']
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$
-  l: [QWERTY, '[ ] & no.', no.&navi]
+  l: [QWERTY, '[ ] & no.', no. & navi]
 - p: [1, 2, 0]
   k: Gui+L
   l: [QWERTY]

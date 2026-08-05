@@ -12,14 +12,14 @@ layers:
   - O
   - P
   - A
-  - {t: S, h: PINKY}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: no. & navi}
+  - {t: D, h: PINKY}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: L, h: PINKY}
+  - {t: K, h: PINKY}
+  - {t: L, h: no. & navi}
   - {t: ;, s: ':'}
   - Z
   - X
@@ -92,14 +92,14 @@ layers:
   - END
   - {t: PG UP, h: Ctl+HOME}
   - {t: '*', h: /}
-  - {t: '4', s: $}
+  - {t: '4', s: $, type: held}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - {t: '[', h: '{', s: '{'}
   - {t: ']', h: '}', s: '}'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:arrow-right-bold$$', type: held alternate}
   - {t: PgDn, h: Ctl+END}
   - {t: '=', s: +}
   - {t: '1', s: '!'}
@@ -113,7 +113,7 @@ layers:
   - {t: no. & navi, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ',', s: <}
-  - {t: '0', s: ), type: held}
+  - {t: '0', s: ), type: held alternate}
   - {t: ., s: '>'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -292,14 +292,14 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Q, type: held}
-  - A
+  - Q
+  - {t: A, type: held}
   - Z
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - P
-  - {t: ;, s: ':'}
-  - {t: /, s: '?', type: held alternate}
+  - {t: ;, s: ':', type: held alternate}
+  - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

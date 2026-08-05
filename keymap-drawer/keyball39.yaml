@@ -105,7 +105,7 @@ layers:
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ',', s: <}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Sft+HOME
   - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}

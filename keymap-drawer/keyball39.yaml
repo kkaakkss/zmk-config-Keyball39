@@ -33,7 +33,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-caps$$
-  - no. & navi
+  - '&mo2_to2'
   - {t: '$$mdi:keyboard-space$$', h: '`\f & nav'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
@@ -110,11 +110,11 @@ layers:
   - Sft+HOME
   - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
   - Sft+END
-  - {t: no. & navi, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ',', s: <}
-  - {t: '0', s: ), type: held alternate}
-  - {t: ., s: '>'}
+  - {t: '0', s: )}
+  - '&dot_to0'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

@@ -162,6 +162,16 @@
             mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LCTL)>;
         };
+
+        mouse_ht_click: mouse_ht_click {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOUSE_HT_CLICK";
+            bindings = <&mkp>, <&mkp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+        };
     };
 
     macros {
@@ -376,7 +386,7 @@
         mouse_layer {
             label = "Mouse";
             bindings = <
-&none   &none   &mo 5        &mo 6        &none                  &none      &none      &none      &none      &none
+&none   &none   &mo 5        &mo 6        &none                  &none      &none      &none      &none      &mouse_ht_click RCLK LCLK
 &none   &none   &mkp LCLK    &mkp RCLK    &none                  &none      &mkp LCLK  &mkp RCLK  &mkp MCLK  &none
 &none   &none   &alt_Lclick  &alt_Rclick  &none                  &none      &mkp MB5   &mkp MB4   &mkp MB4   &none
 &trans  &trans  &trans       &trans       &trans  &trans  &to 0  &mkp MCLK                                   &none

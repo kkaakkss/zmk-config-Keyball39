@@ -38,7 +38,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-space$$', h: no. & navi}
+  - '&space_mo2_to2'
   - $$mdi:apple-keyboard-option$$
   '`\f & nav':
   - {t: '`', s: '~'}
@@ -118,7 +118,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - '&space_to0'
   - {t: QWERTY, h: toggle}
   OSL:
   - {t: Ctl+`, s: Ctl+~}

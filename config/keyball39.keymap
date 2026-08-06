@@ -172,6 +172,20 @@
             flavor = "balanced";
             tapping-term-ms = <200>;
         };
+
+        mo2_to2: mo2_to2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MO2_TO2";
+            #binding-cells = <0>;
+            bindings = <&mo 2>, <&to 2>;
+        };
+
+        dot_to0: dot_to0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOT_TO0";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&to 0>;
+        };
     };
 
     macros {
@@ -349,7 +363,7 @@
 &alt_q_1        &ctrl_guard_alt_w  &alt_e_3  &alt_r_4             &alt_t_5                            &kp Y        &kp U                &kp I      &kp O    &kp P
 &kp A           &lt 2 S            &lt 7 D   &hrm_L LEFT_SHIFT F  &kp G                               &kp H        &hrm_r LEFT_SHIFT J  &lt 7 K    &lt 2 L  &kp SEMICOLON
 &kp Z           &kp X              &kp C     &kp V                &kp B                               &kp N        &kp M                &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_SHIFT  &kp CAPSLOCK       &mo 2     &lt 1 SPACE          &kp LCTRL  &kp LEFT_ALT  &kp SPACE  &lt 2 SPACE                                           &kp RIGHT_ALT
+&kp LEFT_SHIFT  &kp CAPSLOCK       &mo2_to2  &lt 1 SPACE          &kp LCTRL  &kp LEFT_ALT  &kp SPACE  &lt 2 SPACE                                           &kp RIGHT_ALT
             >;
         };
 
@@ -366,10 +380,10 @@
         num_navi_layer {
             label = "no. & navi";
             bindings = <
-&ht MINUS PLUS      &kp N7     &kp N8  &kp N9   &ht LESS_THAN LEFT_PARENTHESIS                  &ht GREATER_THAN RIGHT_PARENTHESIS  &kp HOME        &kp UP_ARROW   &kp END      &ht LC(HOME) PG_UP
-&ht SLASH ASTERISK  &kp N4     &kp N5  &kp N6   &ht LEFT_BRACE LEFT_BRACKET                     &ht RIGHT_BRACE RIGHT_BRACKET       &kp LEFT_ARROW  &kp DOWN       &kp RIGHT    &ht LC(END) PAGE_DOWN
-&kp EQUAL           &kp N1     &kp N2  &kp N3   &kp COMMA                                       &none                               &kp LS(HOME)    &kp LS(ENTER)  &kp LS(END)  &to 2
-&trans              &kp COMMA  &kp N0  &kp DOT  &trans                          &trans  &trans  &trans                                                                          &to 0
+&ht MINUS PLUS      &kp N7     &kp N8  &kp N9    &ht LESS_THAN LEFT_PARENTHESIS                  &ht GREATER_THAN RIGHT_PARENTHESIS  &kp HOME        &kp UP_ARROW   &kp END      &ht LC(HOME) PG_UP
+&ht SLASH ASTERISK  &kp N4     &kp N5  &kp N6    &ht LEFT_BRACE LEFT_BRACKET                     &ht RIGHT_BRACE RIGHT_BRACKET       &kp LEFT_ARROW  &kp DOWN       &kp RIGHT    &ht LC(END) PAGE_DOWN
+&kp EQUAL           &kp N1     &kp N2  &kp N3    &kp COMMA                                       &none                               &kp LS(HOME)    &kp LS(ENTER)  &kp LS(END)  &none
+&trans              &kp COMMA  &kp N0  &dot_to0  &trans                          &trans  &trans  &trans                                                                          &to 0
             >;
         };
 

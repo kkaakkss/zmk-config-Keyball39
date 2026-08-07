@@ -1,10 +1,10 @@
 layout: {zmk_keyboard: keyball39}
 layers:
   QWERTY:
-  - {t: Q, s: '1'}
+  - {t: Q, s: Q}
   - {t: W, s: W}
   - {t: E, s: '3'}
-  - {t: R, s: '4'}
+  - {t: R, s: R}
   - {t: T, s: '5'}
   - Y
   - U
@@ -380,7 +380,7 @@ combos:
   k: {t: '$$mdi:backspace$$', type: backspace}
   l: [QWERTY, '`\f & nav', no. & navi]
 - p: [10, 11]
-  k: {t: '$$mdi:keyboard-tab$$', s: 'Sft+Alt+$$mdi:keyboard-tab$$'}
+  k: $$mdi:keyboard-tab$$
   l: [QWERTY]
 - p: [20, 21]
   k: $$mdi:apple-keyboard-caps$$

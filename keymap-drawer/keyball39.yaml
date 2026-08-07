@@ -421,3 +421,6 @@ combos:
 - p: [1, 2, 0]
   k: Gui+L
   l: [QWERTY]
+- p: [26, 27]
+  k: {t: '-', h: _, s: _}
+  l: [QWERTY, no. & navi]

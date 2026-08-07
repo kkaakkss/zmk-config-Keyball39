@@ -30,14 +30,14 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - {t: /, h: '?', s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-caps$$
   - '&mo2_to2'
   - {t: '$$mdi:keyboard-space$$', h: '`\f & nav'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - '&space_mo2_to2'
   - $$mdi:apple-keyboard-option$$
   '`\f & nav':

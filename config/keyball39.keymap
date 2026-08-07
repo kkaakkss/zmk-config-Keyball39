@@ -220,6 +220,16 @@
             mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LGUI)>;
         };
+
+        ctrl_guard_alt_e: ctrl_guard_alt_e {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CTRL_GUARD_ALT_E";
+            bindings = <&alt_e_3>, <&kp E>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
     };
 
     macros {
@@ -385,6 +395,12 @@
             bindings = <&kp LG(L)>;
             key-positions = <1 2 0>;
             layers = <0>;
+        };
+
+        minus_underscore {
+            bindings = <&ht UNDERSCORE MINUS>;
+            key-positions = <26 27>;
+            layers = <0 2>;
         };
     };
 

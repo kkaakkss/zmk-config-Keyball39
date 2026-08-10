@@ -34,13 +34,13 @@ layers:
   - {t: Sft+T, h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-caps$$
   - '&mo3_to2_outshell'
-  - {t: '$$mdi:keyboard-space$$', h: '''\f & NAV'}
+  - {t: '$$mdi:keyboard-space$$', h: NAV}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - '&mo3_to2_outshell'
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '?', h: '$$mdi:apple-keyboard-shift$$'}
-  '''\f & NAV':
+  NAV:
   - {t: '`', s: '~'}
   - F2
   - F3
@@ -163,8 +163,8 @@ layers:
   Mouse:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - SCROLL
   - SNIPE
-  - OSL
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -203,7 +203,7 @@ layers:
   SCROLL:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -243,8 +243,8 @@ layers:
   SNIPE:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -284,7 +284,7 @@ layers:
   - {t: Ctl+`, s: Ctl+~}
   - F23
   - F22
-  - {t: Gui+R, type: held}
+  - Gui+R
   - Sft+F2
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -292,9 +292,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Ctl+`, s: Ctl+~}
-  - Gui+1
-  - Gui+2
-  - Gui+3
+  - {t: Gui+1, type: held}
+  - {t: Gui+2, type: held}
+  - {t: Gui+3, type: held}
   - Sft+F3
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -332,9 +332,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Q, type: held alternate}
+  - Q
   - {t: A, type: held}
-  - {t: Z, type: held alternate}
+  - Z
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - P
@@ -380,19 +380,19 @@ combos:
 - p: [16, 18]
   k: $$mdi:apple-keyboard-option$$
 - p: [11, 12, 13]
-  k: {t: PINKY, h: '$$mdi:gesture-tap-hold$$'}
+  k: {t: OSL, h: '$$mdi:gesture-tap-hold$$'}
 - p: [6, 7]
   k: Sft+HOME
-  l: ['''\f & NAV']
+  l: [NAV]
 - p: [7, 8]
   k: Sft+END
-  l: ['''\f & NAV']
+  l: [NAV]
 - p: [16, 17]
   k: Ctl+$$mdi:arrow-left-bold$$
-  l: ['''\f & NAV']
+  l: [NAV]
 - p: [17, 18]
   k: Ctl+$$mdi:arrow-right-bold$$
-  l: ['''\f & NAV']
+  l: [NAV]
 - p: [23, 24]
   k: $$mdi:keyboard-space$$
 - p: [11, 12]
@@ -442,4 +442,4 @@ combos:
   l: [NAV_NUM]
 - p: [16, 17, 18]
   k: $$mdi:mouse-scroll-wheel$$
-  l: [SCROLL]
+  l: [Mouse]

@@ -156,14 +156,14 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 6>, <&to 2>;
+            bindings = <&mo 3>, <&to 2>;
         };
 
         mo3_to2_in: mo3_to2_in {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 6>, <&to 2>;
+            bindings = <&mo 3>, <&to 2>;
         };
 
         n_b: n_b {
@@ -291,7 +291,7 @@
         };
 
         osl_combo {
-            bindings = <&sl 7>;
+            bindings = <&sl 8>;
             key-positions = <11 12 13>;
         };
 
@@ -429,7 +429,7 @@
         mouse_m {
             bindings = <&mkp MCLK>;
             key-positions = <16 17 18>;
-            layers = <3>;
+            layers = <5>;
         };
     };
 
@@ -466,10 +466,20 @@
             >;
         };
 
+        num_navi_layer {
+            label = "NUM_NAVI";
+            bindings = <
+&kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp PLUS                   &none   &kp HOME  &kp UP         &kp END    &ht LC(HOME) PG_UP
+&kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS                  &none   &kp LEFT  &kp DOWN       &kp RIGHT  &ht LC(END) PAGE_DOWN
+&kp COMMA     &kp N1  &kp N2  &kp N3  &kp EQUAL                  &none   &trans    &kp LS(ENTER)  &trans     &trans
+&trans        &trans  &trans  &trans  &kp DOT    &kp N0  &trans  &trans                                      &trans
+            >;
+        };
+
         mouse_layer {
             label = "Mouse";
             bindings = <
-&none   &none   &mo 4        &mo 5        &none                  &none  &none      &none      &none      &mouse_ht_click RCLK LCLK
+&none   &none   &mo 6        &mo 7        &none                  &none  &none      &none      &none      &mouse_ht_click RCLK LCLK
 &none   &none   &mkp LCLK    &mkp RCLK    &none                  &none  &mkp LCLK  &mkp RCLK  &mkp MCLK  &none
 &none   &none   &alt_Lclick  &alt_Rclick  &none                  &none  &mkp MB5   &mkp MB4   &mkp MB4   &none
 &trans  &trans  &trans       &trans       &trans  &trans  &to 0  &to 2                                   &none
@@ -493,16 +503,6 @@
 &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans                          &trans
-            >;
-        };
-
-        num_navi_layer {
-            label = "NUM_NAVI";
-            bindings = <
-&kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp PLUS                   &none   &kp HOME  &kp UP         &kp END    &ht LC(HOME) PG_UP
-&kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS                  &none   &kp LEFT  &kp DOWN       &kp RIGHT  &ht LC(END) PAGE_DOWN
-&kp COMMA     &kp N1  &kp N2  &kp N3  &kp EQUAL                  &none   &trans    &kp LS(ENTER)  &trans     &trans
-&trans        &trans  &trans  &trans  &kp DOT    &kp N0  &trans  &trans                                      &trans
             >;
         };
 

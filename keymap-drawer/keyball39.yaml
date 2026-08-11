@@ -12,14 +12,14 @@ layers:
   - O
   - P
   - A
-  - S
+  - {t: S, h: PINKY}
   - {t: D, h: PINKY}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: PINKY}
-  - L
+  - {t: L, h: PINKY}
   - {t: ;, s: ':'}
   - Z
   - X
@@ -33,7 +33,7 @@ layers:
   - {t: /, h: '?', s: '?'}
   - {t: Sft+T, h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-caps$$
-  - '&mo3_to2_outshell'
+  - Sft+T
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: '`\f & NAV'}
@@ -332,14 +332,14 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Q
-  - {t: A, type: held}
+  - {t: Q, type: held}
+  - {t: A, type: held alternate}
   - Z
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - P
   - {t: ;, s: ':', type: held alternate}
-  - {t: /, s: '?'}
+  - {t: /, s: '?', type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

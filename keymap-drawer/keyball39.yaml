@@ -34,13 +34,13 @@ layers:
   - {t: Sft+T, h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-caps$$
   - '&mo3_to2_outshell'
-  - {t: '$$mdi:keyboard-space$$', h: NAV}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:keyboard-space$$', h: '`\f & NAV'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - '&mo3_to2_outshell'
   - {t: '?', h: '$$mdi:apple-keyboard-shift$$'}
-  NAV:
+  '`\f & NAV':
   - {t: '`', s: '~'}
   - F2
   - F3
@@ -74,9 +74,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -119,7 +119,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '0'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&dot_to0'
   NUM_NAVI:
   - '*'
   - {t: '7', s: '&'}
@@ -154,9 +154,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: ., s: '>'}
-  - {t: '0', s: )}
+  - '0'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -383,16 +383,16 @@ combos:
   k: {t: OSL, h: '$$mdi:gesture-tap-hold$$'}
 - p: [6, 7]
   k: Sft+HOME
-  l: [NAV]
+  l: ['`\f & NAV']
 - p: [7, 8]
   k: Sft+END
-  l: [NAV]
+  l: ['`\f & NAV']
 - p: [16, 17]
   k: Ctl+$$mdi:arrow-left-bold$$
-  l: [NAV]
+  l: ['`\f & NAV']
 - p: [17, 18]
   k: Ctl+$$mdi:arrow-right-bold$$
-  l: [NAV]
+  l: ['`\f & NAV']
 - p: [23, 24]
   k: $$mdi:keyboard-space$$
 - p: [11, 12]

@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: keyball39}
 layers:
   QWERTY:
-  - {t: Q, s: Q}
+  - {t: Q, h: '$$mdi:apple-keyboard-caps$$', s: Q}
   - {t: W, s: W}
   - {t: E, s: E}
   - {t: R, s: '4'}

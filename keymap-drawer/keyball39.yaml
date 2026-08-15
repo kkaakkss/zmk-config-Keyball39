@@ -21,10 +21,10 @@ layers:
   - {t: K, h: PINKY}
   - L
   - {t: ;, s: ':'}
-  - Z
+  - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
-  - C
-  - V
+  - A
+  - Q
   - '&b_n'
   - '&n_b'
   - M
@@ -38,7 +38,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - '&mo3_to2_outshell'
   - {t: '?', h: '$$mdi:apple-keyboard-shift$$'}
   NAV:
   - {t: '`', s: '~'}

@@ -528,7 +528,7 @@
         pinky_layer {
             label = "PINKY";
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans         &trans     &trans
+&kp A   &trans  &trans  &trans  &trans                  &trans  &trans  &trans         &trans     &trans
 &trans  &kp Q   &kp A   &kp Z   &trans                  &trans  &kp P   &kp SEMICOLON  &kp SLASH  &trans
 &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans         &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                    &trans

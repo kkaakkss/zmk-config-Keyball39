@@ -46,7 +46,7 @@ layers:
   - F3
   - F4
   - F5
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
@@ -55,8 +55,8 @@ layers:
   - Ctl+S
   - Ctl+PG UP
   - Ctl+PgDn
-  - '&bt_in_out'
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -66,7 +66,7 @@ layers:
   - Ctl+C
   - Ctl+V
   - Ctl+B
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -117,9 +117,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - '0'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&dot_to0'
+  - $$mdi:apple-keyboard-shift$$
   NUM_NAVI:
   - '*'
   - {t: '7', s: '&'}
@@ -154,9 +154,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: ., s: '>'}
   - {t: '0', s: )}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

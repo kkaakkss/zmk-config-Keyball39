@@ -65,12 +65,13 @@
             bindings = <&kp>, <&kp>;
         };
 
-        alt_q_1: alt_q_1 {
+        alt_v_1: alt_v_1 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp Q>, <&kp N1>;
+            bindings = <&kp V>, <&kp N1>;
 
             mods = <MOD_LALT>;
+            keep-mods = <(MOD_LALT)>;
         };
 
         alt_w_2: alt_w_2 {
@@ -79,6 +80,7 @@
             bindings = <&kp W>, <&kp N2>;
 
             mods = <MOD_LALT>;
+            keep-mods = <(MOD_LALT)>;
         };
 
         alt_e_3: alt_e_3 {
@@ -87,6 +89,7 @@
             bindings = <&kp E>, <&kp N3>;
 
             mods = <MOD_LALT>;
+            keep-mods = <(MOD_LALT)>;
         };
 
         alt_r_4: alt_r_4 {
@@ -95,6 +98,7 @@
             bindings = <&kp R>, <&kp N4>;
 
             mods = <MOD_LALT>;
+            keep-mods = <(MOD_LALT)>;
         };
 
         alt_t_5: alt_t_5 {
@@ -103,6 +107,7 @@
             bindings = <&kp T>, <&kp N5>;
 
             mods = <MOD_LALT>;
+            keep-mods = <(MOD_LALT)>;
         };
 
         space_to0: space_to0 {
@@ -134,14 +139,16 @@
             bindings = <&alt_e_3>, <&kp E>;
 
             mods = <MOD_LCTL>;
+            keep-mods = <(MOD_LCTL)>;
         };
 
-        ctrl_guard_alt_q: ctrl_guard_alt_q {
+        ctrl_guard_alt_v: ctrl_guard_alt_v {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&alt_q_1>, <&kp Q>;
+            bindings = <&alt_v_1>, <&kp V>;
 
             mods = <MOD_LCTL>;
+            keep-mods = <(MOD_LCTL)>;
         };
 
         ctrl_guard_alt_w: ctrl_guard_alt_w {
@@ -150,6 +157,7 @@
             bindings = <&alt_w_2>, <&kp W>;
 
             mods = <MOD_LCTL>;
+            keep-mods = <(MOD_LCTL)>;
         };
 
         mo3_to2_outshell: mo3_to2_outshell {
@@ -198,7 +206,7 @@
         caps_q: caps_q {
             compatible = "zmk,behavior-hold-tap";
             label = "CAPS_Q";
-            bindings = <&kp>, <&ctrl_guard_alt_q>;
+            bindings = <&kp>, <&ctrl_guard_alt_v>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;

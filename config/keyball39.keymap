@@ -449,30 +449,30 @@
         nav_layer {
             label = "NAV";
             bindings = <
-&kp GRAVE             &kp F2     &kp F3         &kp F4             &kp F5                      &bt BT_SEL 0  &kp HOME        &kp UP_ARROW   &kp END    &ht LC(HOME) PG_UP
-&kp NON_US_BACKSLASH  &kp LC(S)  &kp LC(PG_UP)  &kp LC(PAGE_DOWN)  &bt_in_out                  &bt BT_SEL 1  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT  &ht LC(END) PAGE_DOWN
-&kp LC(Z)             &kp LC(X)  &kp LC(C)      &kp LC(V)          &kp LC(B)                   &bt BT_SEL 2  &none           &kp LS(ENTER)  &none      &none
-&trans                &trans     &trans         &trans             &trans      &trans  &trans  &trans                                                  &trans
+&kp GRAVE             &kp F2     &kp F3         &kp F4             &kp F5                     &none   &kp HOME        &kp UP_ARROW   &kp END    &ht LC(HOME) PG_UP
+&kp NON_US_BACKSLASH  &kp LC(S)  &kp LC(PG_UP)  &kp LC(PAGE_DOWN)  &none                      &none   &kp LEFT_ARROW  &kp DOWN       &kp RIGHT  &ht LC(END) PAGE_DOWN
+&kp LC(Z)             &kp LC(X)  &kp LC(C)      &kp LC(V)          &kp LC(B)                  &none   &none           &kp LS(ENTER)  &none      &none
+&trans                &trans     &trans         &trans             &trans     &trans  &trans  &trans                                            &trans
             >;
         };
 
         nav_num_layer {
             label = "NAV_NUM";
             bindings = <
-&ht LC(HOME) PG_UP  &kp HOME  &kp UP         &kp END    &trans                  &kp PLUS      &kp N7  &kp N8  &kp N9  &kp ASTERISK
-&ht LC(END) PG_DN   &kp LEFT  &kp DOWN       &kp RIGHT  &trans                  &kp MINUS     &kp N4  &kp N5  &kp N6  &kp SLASH
-&trans              &trans    &kp LS(ENTER)  &trans     &trans                  &kp EQUAL     &kp N1  &kp N2  &kp N3  &kp COMMA
-&trans              &trans    &dot_to0       &trans     &trans  &trans  &trans  &kp NUMBER_0                          &trans
+&ht LC(HOME) PG_UP  &kp HOME  &kp UP         &kp END    &trans                        &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTERISK
+&ht LC(END) PG_DN   &kp LEFT  &kp DOWN       &kp RIGHT  &trans                        &kp MINUS  &kp N4  &kp N5  &kp N6  &kp SLASH
+&trans              &trans    &kp LS(ENTER)  &trans     &trans                        &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp COMMA
+&trans              &trans    &dot_to0       &trans     &trans  &trans  &kp NUMBER_0  &dot_to0                           &kp LSHFT
             >;
         };
 
         num_navi_layer {
             label = "NUM_NAVI";
             bindings = <
-&kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp PLUS                   &none   &kp HOME  &kp UP         &kp END    &ht LC(HOME) PG_UP
-&kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS                  &none   &kp LEFT  &kp DOWN       &kp RIGHT  &ht LC(END) PAGE_DOWN
-&kp COMMA     &kp N1  &kp N2  &kp N3  &kp EQUAL                  &none   &trans    &kp LS(ENTER)  &trans     &trans
-&trans        &trans  &trans  &trans  &kp DOT    &kp N0  &trans  &trans                                      &trans
+&kp ASTERISK  &kp N7  &kp N8  &kp N9   &kp PLUS                   &none   &kp HOME  &kp UP         &kp END    &ht LC(HOME) PG_UP
+&kp SLASH     &kp N4  &kp N5  &kp N6   &kp MINUS                  &none   &kp LEFT  &kp DOWN       &kp RIGHT  &ht LC(END) PAGE_DOWN
+&kp COMMA     &kp N1  &kp N2  &kp N3   &kp EQUAL                  &none   &trans    &kp LS(ENTER)  &trans     &trans
+&trans        &trans  &trans  &kp DOT  &kp N0     &trans  &trans  &trans                                      &trans
             >;
         };
 

@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: keyball39}
 layers:
   QWERTY:
-  - {t: Q, s: Q}
+  - {t: V, s: V}
   - {t: W, s: W}
   - {t: E, s: E}
   - {t: R, s: '4'}
@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - A
+  - {t: C, h: '$$mdi:apple-keyboard-caps$$'}
   - S
   - {t: D, h: PINKY}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
@@ -34,9 +34,9 @@ layers:
   - {t: Sft+T, h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-caps$$
   - '&mo3_to2_outshell'
-  - {t: '$$mdi:keyboard-space$$', h: NAV}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:keyboard-space$$', h: NAV}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - '&mo3_to2_outshell'
   - {t: '?', h: '$$mdi:apple-keyboard-shift$$'}
@@ -74,9 +74,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

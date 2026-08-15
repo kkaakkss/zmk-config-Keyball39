@@ -13,12 +13,12 @@ layers:
   - P
   - {t: C, h: '$$mdi:apple-keyboard-caps$$'}
   - S
-  - {t: D, h: PINKY}
+  - {t: D, h: Pinky}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: PINKY}
+  - {t: K, h: Pinky}
   - L
   - {t: ;, s: ':'}
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
@@ -36,11 +36,11 @@ layers:
   - '&mo3_to2_outshell'
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-space$$', h: NAV}
+  - {t: '$$mdi:keyboard-space$$', h: '`\F_Navi'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - '&mo3_to2_outshell'
   - {t: '?', h: '$$mdi:apple-keyboard-shift$$'}
-  NAV:
+  '`\F_Navi':
   - {t: '`', s: '~'}
   - F2
   - F3
@@ -80,7 +80,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  NAV_NUM:
+  Navi_Num:
   - {t: PG UP, h: Ctl+HOME}
   - HOME
   - $$mdi:arrow-up-bold$$
@@ -120,7 +120,7 @@ layers:
   - '0'
   - '&dot_to0'
   - $$mdi:apple-keyboard-shift$$
-  NUM_NAVI:
+  Num_Navi:
   - '*'
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -163,8 +163,8 @@ layers:
   Mouse:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - SCROLL
-  - SNIPE
+  - Scroll
+  - Snipe
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -200,7 +200,7 @@ layers:
   - {t: QWERTY, h: toggle}
   - {t: QWERTY, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  SCROLL:
+  Scroll:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -240,7 +240,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  SNIPE:
+  Snipe:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -320,7 +320,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  PINKY:
+  Pinky:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -383,52 +383,52 @@ combos:
   k: {t: OSL, h: '$$mdi:gesture-tap-hold$$'}
 - p: [6, 7]
   k: Sft+HOME
-  l: [NAV]
+  l: ['`\F_Navi']
 - p: [7, 8]
   k: Sft+END
-  l: [NAV]
+  l: ['`\F_Navi']
 - p: [16, 17]
   k: Ctl+$$mdi:arrow-left-bold$$
-  l: [NAV]
+  l: ['`\F_Navi']
 - p: [17, 18]
   k: Ctl+$$mdi:arrow-right-bold$$
-  l: [NAV]
+  l: ['`\F_Navi']
 - p: [23, 24]
   k: $$mdi:keyboard-space$$
 - p: [11, 12]
   k: $$mdi:keyboard-tab$$
-  l: [QWERTY, PINKY]
+  l: [QWERTY, Pinky]
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$
-  l: [QWERTY, PINKY]
+  l: [QWERTY, Pinky]
 - p: [26, 27]
   k: {t: '-', s: _}
 - p: [18, 19]
   k: {t: '''', s: '"'}
 - p: [11, 13]
   k: '&dtap_to_lay2'
-- p: [3, 4]
-  k: (
-- p: [5, 6]
-  k: )
 - p: [13, 14]
-  k: {t: '[', s: '{'}
+  k: (
 - p: [15, 16]
+  k: )
+- p: [3, 4]
+  k: {t: '[', s: '{'}
+- p: [5, 6]
   k: {t: ']', s: '}'}
-- p: [1, 2, 3]
-  k: LGUI
+- p: [1, 2, 0]
+  k: Gui+L
 - p: [1, 2]
   k: Sft+HOME
-  l: [NAV_NUM]
+  l: [Navi_Num]
 - p: [2, 3]
   k: Sft+END
-  l: [NAV_NUM]
+  l: [Navi_Num]
 - p: [11, 12]
   k: Ctl+$$mdi:arrow-left-bold$$
-  l: [NAV_NUM]
+  l: [Navi_Num]
 - p: [12, 13]
   k: Ctl+$$mdi:arrow-right-bold$$
-  l: [NAV_NUM]
+  l: [Navi_Num]
 - p: [27, 28]
   k: {t: '`', s: '~'}
 - p: [28, 29]
@@ -439,7 +439,10 @@ combos:
   k: Sft+S
 - p: [11, 13]
   k: {t: QWERTY, h: toggle}
-  l: [NAV_NUM]
+  l: [Navi_Num]
 - p: [16, 17, 18]
   k: $$mdi:mouse-scroll-wheel$$
   l: [Mouse]
+- p: [1, 2, 3]
+  k: F2
+  l: [QWERTY]

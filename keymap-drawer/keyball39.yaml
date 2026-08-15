@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: keyball39}
 layers:
   QWERTY:
-  - {t: V, h: '$$mdi:apple-keyboard-caps$$', s: V}
+  - {t: V, s: V}
   - {t: W, s: W}
   - {t: E, s: E}
   - {t: R, s: '4'}
@@ -11,20 +11,20 @@ layers:
   - I
   - O
   - P
-  - A
-  - {t: S, h: PINKY}
-  - {t: D, h: PINKY}
+  - {t: C, h: '$$mdi:apple-keyboard-caps$$'}
+  - S
+  - {t: D, h: Pinky}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: PINKY}
-  - {t: L, h: PINKY}
+  - {t: K, h: Pinky}
+  - L
   - {t: ;, s: ':'}
-  - Z
+  - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
-  - C
-  - V
+  - A
+  - Q
   - '&b_n'
   - '&n_b'
   - M
@@ -33,20 +33,20 @@ layers:
   - {t: /, h: '?', s: '?'}
   - {t: Sft+T, h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-caps$$
-  - Sft+T
+  - '&mo3_to2_outshell'
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-space$$', h: '`\f & NAV'}
+  - {t: '$$mdi:keyboard-space$$', h: '`\F_Navi'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - '&mo3_to2_outshell'
   - {t: '?', h: '$$mdi:apple-keyboard-shift$$'}
-  '`\f & NAV':
+  '`\F_Navi':
   - {t: '`', s: '~'}
   - F2
   - F3
   - F4
   - F5
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
@@ -55,8 +55,8 @@ layers:
   - Ctl+S
   - Ctl+PG UP
   - Ctl+PgDn
-  - '&bt_in_out'
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -66,7 +66,7 @@ layers:
   - Ctl+C
   - Ctl+V
   - Ctl+B
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -80,7 +80,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  NAV_NUM:
+  Navi_Num:
   - {t: PG UP, h: Ctl+HOME}
   - HOME
   - $$mdi:arrow-up-bold$$
@@ -117,10 +117,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - '0'
   - '&dot_to0'
-  NUM_NAVI:
+  - $$mdi:apple-keyboard-shift$$
+  Num_Navi:
   - '*'
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -155,7 +155,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ., s: '>'}
-  - '0'
+  - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -163,8 +163,8 @@ layers:
   Mouse:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - SCROLL
-  - SNIPE
+  - Scroll
+  - Snipe
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -178,7 +178,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-right-click-outline$$
+  - {t: '$$mdi:mouse-left-click-outline$$', h: '$$mdi:mouse-right-click-outline$$'}
   - $$mdi:mouse-scroll-wheel$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -187,9 +187,9 @@ layers:
   - '&alt_Rclick'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mkp MB5'
-  - '&mkp MB4'
-  - '&mkp MB4'
+  - Alt+$$mdi:arrow-left-bold$$
+  - Alt+$$mdi:arrow-left-bold$$
+  - Alt+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -200,7 +200,7 @@ layers:
   - {t: QWERTY, h: toggle}
   - {t: QWERTY, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  SCROLL:
+  Scroll:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -240,7 +240,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  SNIPE:
+  Snipe:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -281,12 +281,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   OSL:
-  - {t: Ctl+`, s: Ctl+~}
+  - Alt+F4
   - F23
   - F22
   - Gui+R
   - Sft+F2
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -296,7 +296,7 @@ layers:
   - {t: Gui+2, type: held}
   - {t: Gui+3, type: held}
   - Sft+F3
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -306,7 +306,7 @@ layers:
   - F20
   - F18
   - Gui+HOME
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -320,8 +320,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  PINKY:
-  - A
+  Pinky:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -332,14 +331,15 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Q, type: held}
-  - {t: A, type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Q
+  - {t: A, type: held}
   - Z
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - P
   - {t: ;, s: ':', type: held alternate}
-  - {t: /, s: '?', type: held alternate}
+  - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -383,52 +383,52 @@ combos:
   k: {t: OSL, h: '$$mdi:gesture-tap-hold$$'}
 - p: [6, 7]
   k: Sft+HOME
-  l: ['`\f & NAV']
+  l: ['`\F_Navi']
 - p: [7, 8]
   k: Sft+END
-  l: ['`\f & NAV']
+  l: ['`\F_Navi']
 - p: [16, 17]
   k: Ctl+$$mdi:arrow-left-bold$$
-  l: ['`\f & NAV']
+  l: ['`\F_Navi']
 - p: [17, 18]
   k: Ctl+$$mdi:arrow-right-bold$$
-  l: ['`\f & NAV']
+  l: ['`\F_Navi']
 - p: [23, 24]
   k: $$mdi:keyboard-space$$
 - p: [11, 12]
   k: $$mdi:keyboard-tab$$
-  l: [QWERTY, PINKY]
+  l: [QWERTY, Pinky]
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$
-  l: [QWERTY, PINKY]
+  l: [QWERTY, Pinky]
 - p: [26, 27]
   k: {t: '-', s: _}
 - p: [18, 19]
   k: {t: '''', s: '"'}
 - p: [11, 13]
   k: '&dtap_to_lay2'
-- p: [3, 4]
-  k: (
-- p: [5, 6]
-  k: )
 - p: [13, 14]
-  k: {t: '[', s: '{'}
+  k: (
 - p: [15, 16]
+  k: )
+- p: [3, 4]
+  k: {t: '[', s: '{'}
+- p: [5, 6]
   k: {t: ']', s: '}'}
-- p: [1, 2, 3]
-  k: LGUI
+- p: [1, 2, 0]
+  k: Gui+L
 - p: [1, 2]
   k: Sft+HOME
-  l: [NAV_NUM]
+  l: [Navi_Num]
 - p: [2, 3]
   k: Sft+END
-  l: [NAV_NUM]
+  l: [Navi_Num]
 - p: [11, 12]
   k: Ctl+$$mdi:arrow-left-bold$$
-  l: [NAV_NUM]
+  l: [Navi_Num]
 - p: [12, 13]
   k: Ctl+$$mdi:arrow-right-bold$$
-  l: [NAV_NUM]
+  l: [Navi_Num]
 - p: [27, 28]
   k: {t: '`', s: '~'}
 - p: [28, 29]
@@ -439,7 +439,10 @@ combos:
   k: Sft+S
 - p: [11, 13]
   k: {t: QWERTY, h: toggle}
-  l: [NAV_NUM]
+  l: [Navi_Num]
 - p: [16, 17, 18]
   k: $$mdi:mouse-scroll-wheel$$
   l: [Mouse]
+- p: [1, 2, 3]
+  k: F2
+  l: [QWERTY]

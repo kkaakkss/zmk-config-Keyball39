@@ -37,10 +37,10 @@
         hrm_L: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <230>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <80>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <60>;
+            flavor = "balanced";
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 37 38 36>;
             bindings = <&kp>, <&kp>;
         };
@@ -57,10 +57,10 @@
         hrm_r: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <230>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <80>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <60>;
+            flavor = "balanced";
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35>;
             bindings = <&kp>, <&kp>;
         };
@@ -71,7 +71,6 @@
             bindings = <&kp V>, <&kp N1>;
 
             mods = <MOD_LALT>;
-            keep-mods = <(MOD_LALT)>;
         };
 
         alt_w_2: alt_w_2 {
@@ -80,7 +79,6 @@
             bindings = <&kp W>, <&kp N2>;
 
             mods = <MOD_LALT>;
-            keep-mods = <(MOD_LALT)>;
         };
 
         alt_e_3: alt_e_3 {
@@ -89,7 +87,6 @@
             bindings = <&kp E>, <&kp N3>;
 
             mods = <MOD_LALT>;
-            keep-mods = <(MOD_LALT)>;
         };
 
         alt_r_4: alt_r_4 {
@@ -98,7 +95,6 @@
             bindings = <&kp R>, <&kp N4>;
 
             mods = <MOD_LALT>;
-            keep-mods = <(MOD_LALT)>;
         };
 
         alt_t_5: alt_t_5 {
@@ -107,7 +103,6 @@
             bindings = <&kp T>, <&kp N5>;
 
             mods = <MOD_LALT>;
-            keep-mods = <(MOD_LALT)>;
         };
 
         space_to0: space_to0 {
@@ -139,7 +134,6 @@
             bindings = <&alt_e_3>, <&kp E>;
 
             mods = <MOD_LCTL>;
-            keep-mods = <(MOD_LCTL)>;
         };
 
         ctrl_guard_alt_v: ctrl_guard_alt_v {
@@ -148,7 +142,6 @@
             bindings = <&alt_v_1>, <&kp V>;
 
             mods = <MOD_LCTL>;
-            keep-mods = <(MOD_LCTL)>;
         };
 
         ctrl_guard_alt_w: ctrl_guard_alt_w {
@@ -157,7 +150,6 @@
             bindings = <&alt_w_2>, <&kp W>;
 
             mods = <MOD_LCTL>;
-            keep-mods = <(MOD_LCTL)>;
         };
 
         mo3_to2_outshell: mo3_to2_outshell {
@@ -203,10 +195,10 @@
             bindings = <&mkp>, <&mkp>;
         };
 
-        caps_q: caps_q {
+        caps_c: caps_c {
             compatible = "zmk,behavior-hold-tap";
-            label = "CAPS_Q";
-            bindings = <&kp>, <&ctrl_guard_alt_v>;
+            label = "CAPS_C";
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -370,27 +362,27 @@
 
         kp {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <3 4>;
+            key-positions = <13 14>;
         };
 
         bra_R {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <5 6>;
+            key-positions = <15 16>;
         };
 
         BKT_L {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <13 14>;
+            key-positions = <3 4>;
         };
 
         BKT_R {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <15 16>;
+            key-positions = <5 6>;
         };
 
         gui_l {
-            bindings = <&kp LGUI>;
-            key-positions = <1 2 3>;
+            bindings = <&kp LG(L)>;
+            key-positions = <1 2 0>;
         };
 
         shift_home_l2 {
@@ -448,6 +440,12 @@
             key-positions = <16 17 18>;
             layers = <4>;
         };
+
+        osl_f2 {
+            bindings = <&kp F2>;
+            key-positions = <1 2 3>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -456,55 +454,55 @@
         default_layer {
             label = "QWERTY";
             bindings = <
-&caps_q CAPSLOCK 0    &ctrl_guard_alt_w  &ctrl_guard_alt_e  &alt_r_4        &alt_t_5                                                  &kp Y              &kp U            &kp I      &kp O    &kp P
-&kp A                 &lt 8 S            &lt 8 D            &hrm_L LSHFT F  &kp G                                                     &kp H              &hrm_r LSHIFT J  &lt 8 K    &lt 8 L  &kp SEMICOLON
-&kp Z                 &kp X              &kp C              &kp V           &b_n                                                      &n_b               &kp M            &kp COMMA  &kp DOT  &ht QUESTION SLASH
-&mt LEFT_SHIFT LS(T)  &kp CAPSLOCK       &kp LS(T)          &kp LCTRL       &kp LEFT_ALT  &lt 1 SPACE  &space_shift LEFT_SHIFT SPACE  &mo3_to2_outshell                                       &mt RIGHT_SHIFT QUESTION
+&ctrl_guard_alt_v     &ctrl_guard_alt_w  &ctrl_guard_alt_e  &alt_r_4        &alt_t_5                                                  &kp Y              &kp U            &kp I      &kp O    &kp P
+&caps_c CAPSLOCK C    &kp S              &lt 8 D            &hrm_L LSHFT F  &kp G                                                     &kp H              &hrm_r LSHIFT J  &lt 8 K    &kp L    &kp SEMICOLON
+&ht LEFT_SHIFT Z      &kp X              &kp A              &kp Q           &b_n                                                      &n_b               &kp M            &kp COMMA  &kp DOT  &ht QUESTION SLASH
+&mt LEFT_SHIFT LS(T)  &kp CAPSLOCK       &mo3_to2_outshell  &kp LCTRL       &kp LEFT_ALT  &lt 1 SPACE  &space_shift LEFT_SHIFT SPACE  &mo3_to2_outshell                                       &mt RIGHT_SHIFT QUESTION
             >;
         };
 
-        nav_layer {
-            label = "`\f & NAV";
+        f_nav {
+            label = "`\F_Navi";
             bindings = <
-&kp GRAVE             &kp F2     &kp F3         &kp F4             &kp F5                      &bt BT_SEL 0  &kp HOME        &kp UP_ARROW   &kp END    &ht LC(HOME) PG_UP
-&kp NON_US_BACKSLASH  &kp LC(S)  &kp LC(PG_UP)  &kp LC(PAGE_DOWN)  &bt_in_out                  &bt BT_SEL 1  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT  &ht LC(END) PAGE_DOWN
-&kp LC(Z)             &kp LC(X)  &kp LC(C)      &kp LC(V)          &kp LC(B)                   &bt BT_SEL 2  &none           &kp LS(ENTER)  &none      &none
-&trans                &trans     &trans         &trans             &trans      &trans  &trans  &trans                                                  &trans
+&kp GRAVE             &kp F2     &kp F3         &kp F4             &kp F5                     &none   &kp HOME        &kp UP_ARROW   &kp END    &ht LC(HOME) PG_UP
+&kp NON_US_BACKSLASH  &kp LC(S)  &kp LC(PG_UP)  &kp LC(PAGE_DOWN)  &none                      &none   &kp LEFT_ARROW  &kp DOWN       &kp RIGHT  &ht LC(END) PAGE_DOWN
+&kp LC(Z)             &kp LC(X)  &kp LC(C)      &kp LC(V)          &kp LC(B)                  &none   &none           &kp LS(ENTER)  &none      &none
+&trans                &trans     &trans         &trans             &trans     &trans  &trans  &trans                                            &trans
             >;
         };
 
-        nav_num_layer {
-            label = "NAV_NUM";
+        navi_num {
+            label = "Navi_Num";
             bindings = <
-&ht LC(HOME) PG_UP  &kp HOME  &kp UP         &kp END    &trans                  &kp PLUS      &kp N7  &kp N8  &kp N9  &kp ASTERISK
-&ht LC(END) PG_DN   &kp LEFT  &kp DOWN       &kp RIGHT  &trans                  &kp MINUS     &kp N4  &kp N5  &kp N6  &kp SLASH
-&trans              &trans    &kp LS(ENTER)  &trans     &trans                  &kp EQUAL     &kp N1  &kp N2  &kp N3  &kp COMMA
-&trans              &trans    &dot_to0       &trans     &trans  &trans  &trans  &kp NUMBER_0                          &dot_to0
+&ht LC(HOME) PG_UP  &kp HOME  &kp UP         &kp END    &trans                        &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTERISK
+&ht LC(END) PG_DN   &kp LEFT  &kp DOWN       &kp RIGHT  &trans                        &kp MINUS  &kp N4  &kp N5  &kp N6  &kp SLASH
+&trans              &trans    &kp LS(ENTER)  &trans     &trans                        &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp COMMA
+&trans              &trans    &dot_to0       &trans     &trans  &trans  &kp NUMBER_0  &dot_to0                           &kp LSHFT
             >;
         };
 
-        num_navi_layer {
-            label = "NUM_NAVI";
+        num_navi {
+            label = "Num_Navi";
             bindings = <
-&kp ASTERISK  &kp N7  &kp N8  &kp N9   &kp PLUS                      &none   &kp HOME  &kp UP         &kp END    &ht LC(HOME) PG_UP
-&kp SLASH     &kp N4  &kp N5  &kp N6   &kp MINUS                     &none   &kp LEFT  &kp DOWN       &kp RIGHT  &ht LC(END) PAGE_DOWN
-&kp COMMA     &kp N1  &kp N2  &kp N3   &kp EQUAL                     &none   &trans    &kp LS(ENTER)  &trans     &trans
-&trans        &trans  &trans  &kp DOT  &kp NUMBER_0  &trans  &trans  &trans                                      &trans
+&kp ASTERISK  &kp N7  &kp N8  &kp N9   &kp PLUS                   &none   &kp HOME  &kp UP         &kp END    &ht LC(HOME) PG_UP
+&kp SLASH     &kp N4  &kp N5  &kp N6   &kp MINUS                  &none   &kp LEFT  &kp DOWN       &kp RIGHT  &ht LC(END) PAGE_DOWN
+&kp COMMA     &kp N1  &kp N2  &kp N3   &kp EQUAL                  &none   &trans    &kp LS(ENTER)  &trans     &trans
+&trans        &trans  &trans  &kp DOT  &kp N0     &trans  &trans  &trans                                      &trans
             >;
         };
 
         mouse_layer {
             label = "Mouse";
             bindings = <
-&none   &none   &mo 5        &mo 6        &none                  &none  &none      &none      &none      &mouse_ht_click RCLK LCLK
-&none   &none   &mkp LCLK    &mkp RCLK    &none                  &none  &mkp LCLK  &mkp RCLK  &mkp MCLK  &none
-&none   &none   &alt_Lclick  &alt_Rclick  &none                  &none  &mkp MB5   &mkp MB4   &mkp MB4   &none
-&trans  &trans  &trans       &trans       &trans  &trans  &to 0  &to 0                                   &none
+&none   &none   &mo 5        &mo 6        &none                  &none  &none               &none                      &none          &mouse_ht_click RCLK LCLK
+&none   &none   &mkp LCLK    &mkp RCLK    &none                  &none  &mkp LCLK           &mouse_ht_click RCLK LCLK  &mkp MCLK      &none
+&none   &none   &alt_Lclick  &alt_Rclick  &none                  &none  &kp LA(LEFT_ARROW)  &kp LA(LEFT_ARROW)         &kp LA(RIGHT)  &none
+&trans  &trans  &trans       &trans       &trans  &trans  &to 0  &to 0                                                                &none
             >;
         };
 
         scroll_layer {
-            label = "SCROLL";
+            label = "Scroll";
             bindings = <
 &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
@@ -514,7 +512,7 @@
         };
 
         snipe_layer {
-            label = "SNIPE";
+            label = "Snipe";
             bindings = <
 &trans  &trans  &trans  &trans  &bootloader                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
@@ -526,17 +524,17 @@
         osl_layer {
             label = "OSL";
             bindings = <
-&kp LC(GRAVE)  &kp F23           &kp F22           &kp LG(R)         &kp LS(F2)                    &trans  &trans  &trans  &trans  &trans
-&kp LC(GRAVE)  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LS(F3)                    &trans  &trans  &trans  &trans  &trans
-&kp F21        &kp F19           &kp F20           &kp F18           &kp LG(HOME)                  &trans  &trans  &trans  &trans  &trans
-&bt_in_out     &trans            &trans            &trans            &trans        &trans  &trans  &trans                          &trans
+&kp LA(F4)     &kp F23           &kp F22           &kp LG(R)         &kp LS(F2)                    &bt BT_SEL 0  &trans  &trans  &trans  &trans
+&kp LC(GRAVE)  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LS(F3)                    &bt BT_SEL 1  &trans  &trans  &trans  &trans
+&kp F21        &kp F19           &kp F20           &kp F18           &kp LG(HOME)                  &bt BT_SEL 2  &trans  &trans  &trans  &trans
+&bt_in_out     &trans            &trans            &trans            &trans        &trans  &trans  &trans                                &trans
             >;
         };
 
         pinky_layer {
-            label = "PINKY";
+            label = "Pinky";
             bindings = <
-&kp A   &trans  &trans  &trans  &trans                  &trans  &trans  &trans         &trans     &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans         &trans     &trans
 &trans  &kp Q   &kp A   &kp Z   &trans                  &trans  &kp P   &kp SEMICOLON  &kp SLASH  &trans
 &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans         &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                    &trans

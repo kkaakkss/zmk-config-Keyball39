@@ -65,10 +65,10 @@
             bindings = <&kp>, <&kp>;
         };
 
-        alt_q_1: alt_q_1 {
+        alt_v_1: alt_v_1 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp Q>, <&kp N1>;
+            bindings = <&kp V>, <&kp N1>;
 
             mods = <MOD_LALT>;
         };
@@ -136,10 +136,10 @@
             mods = <MOD_LCTL>;
         };
 
-        ctrl_guard_alt_q: ctrl_guard_alt_q {
+        ctrl_guard_alt_v: ctrl_guard_alt_v {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&alt_q_1>, <&kp Q>;
+            bindings = <&alt_v_1>, <&kp V>;
 
             mods = <MOD_LCTL>;
         };
@@ -193,6 +193,15 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&mkp>, <&mkp>;
+        };
+
+        caps_c: caps_c {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CAPS_C";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -439,10 +448,10 @@
         default_layer {
             label = "QWERTY";
             bindings = <
-&ctrl_guard_alt_q     &ctrl_guard_alt_w  &ctrl_guard_alt_e  &alt_r_4        &alt_t_5                                            &kp Y              &kp U            &kp I      &kp O    &kp P
-&kp A                 &kp S              &lt 8 D            &hrm_L LSHFT F  &kp G                                               &kp H              &hrm_r LSHIFT J  &lt 8 K    &kp L    &kp SEMICOLON
-&ht LEFT_SHIFT Z      &kp X              &kp A              &kp Q           &b_n                                                &n_b               &kp M            &kp COMMA  &kp DOT  &ht QUESTION SLASH
-&mt LEFT_SHIFT LS(T)  &kp CAPSLOCK       &mo3_to2_outshell  &lt 1 SPACE     &kp LCTRL  &kp LALT  &space_shift LEFT_SHIFT SPACE  &mo3_to2_outshell                                       &mt RIGHT_SHIFT QUESTION
+&ctrl_guard_alt_v     &ctrl_guard_alt_w  &ctrl_guard_alt_e  &alt_r_4        &alt_t_5                                                  &kp Y              &kp U            &kp I      &kp O    &kp P
+&caps_c CAPSLOCK C    &kp S              &lt 8 D            &hrm_L LSHFT F  &kp G                                                     &kp H              &hrm_r LSHIFT J  &lt 8 K    &kp L    &kp SEMICOLON
+&ht LEFT_SHIFT Z      &kp X              &kp A              &kp Q           &b_n                                                      &n_b               &kp M            &kp COMMA  &kp DOT  &ht QUESTION SLASH
+&mt LEFT_SHIFT LS(T)  &kp CAPSLOCK       &mo3_to2_outshell  &kp LCTRL       &kp LEFT_ALT  &lt 1 SPACE  &space_shift LEFT_SHIFT SPACE  &mo3_to2_outshell                                       &mt RIGHT_SHIFT QUESTION
             >;
         };
 

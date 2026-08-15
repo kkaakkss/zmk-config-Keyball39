@@ -1,0 +1,4 @@
+interface:
+  display_name: "Keyball39 업데이트 배포"
+  short_description: "변경 검증부터 커밋과 GitHub 빌드까지 안내"
+  default_prompt: "Use $keyball39-release-update to validate and publish this Keyball39 update."

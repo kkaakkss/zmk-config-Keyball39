@@ -1,0 +1,4 @@
+interface:
+  display_name: "Keyball39 키맵 편집"
+  short_description: "Keyball39 ZMK 키맵과 동작을 안전하게 수정"
+  default_prompt: "Use $keyball39-edit-keymap to update this Keyball39 keymap safely."

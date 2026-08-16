@@ -170,7 +170,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:mouse-left-click-outline$$', h: '$$mdi:mouse-right-click-outline$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-left-click-outline$$
@@ -188,7 +188,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Alt+$$mdi:arrow-left-bold$$
-  - Alt+$$mdi:arrow-left-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Alt+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -375,6 +375,7 @@ combos:
   k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [20, 21]
   k: $$mdi:apple-keyboard-caps$$
+  l: [QWERTY]
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
 - p: [16, 18]
@@ -403,8 +404,10 @@ combos:
   l: [QWERTY, Pinky]
 - p: [26, 27]
   k: {t: '-', s: _}
+  l: [QWERTY]
 - p: [18, 19]
   k: {t: '''', s: '"'}
+  l: [QWERTY]
 - p: [11, 13]
   k: '&dtap_to_lay2'
 - p: [13, 14]
@@ -417,6 +420,7 @@ combos:
   k: {t: ']', s: '}'}
 - p: [1, 2, 0]
   k: Gui+L
+  l: [QWERTY]
 - p: [1, 2]
   k: Sft+HOME
   l: [Navi_Num]
@@ -431,18 +435,17 @@ combos:
   l: [Navi_Num]
 - p: [27, 28]
   k: {t: '`', s: '~'}
+  l: [QWERTY]
 - p: [28, 29]
   k: {t: \, s: '|'}
+  l: [QWERTY]
 - p: [25, 26]
   k: {t: '=', s: +}
 - p: [3, 2]
   k: Sft+T
+  l: [QWERTY]
 - p: [11, 13]
   k: {t: QWERTY, h: toggle}
   l: [Navi_Num]
-- p: [16, 17, 18]
-  k: $$mdi:mouse-scroll-wheel$$
-  l: [Mouse]
 - p: [1, 2, 3]
   k: F2
-  l: [QWERTY]

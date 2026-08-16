@@ -404,7 +404,7 @@ combos:
   k: $$mdi:keyboard-space$$
 - p: [22, 11]
   k: $$mdi:keyboard-tab$$
-  l: [QWERTY]
+  l: [QWERTY, '`\F_Navi', Navi_Num, Num_Navi]
 - p: [26, 27]
   k: {t: '-', s: _}
   l: [QWERTY]
@@ -413,6 +413,7 @@ combos:
   l: [QWERTY]
 - p: [11, 13]
   k: '&dtap_to_lay2'
+  l: [QWERTY]
 - p: [13, 14]
   k: (
 - p: [15, 16]

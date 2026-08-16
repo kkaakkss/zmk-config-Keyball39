@@ -1,4 +1,4 @@
 interface:
-  display_name: "Keyball39 ¾÷µ¥ÀÌÆ® ¹èÆ÷"
-  short_description: "º¯°æ °ËÁõºÎÅÍ Ä¿¹Ô°ú GitHub ºôµå±îÁö ¾È³»"
+  display_name: "Keyball39 ì—…ë°ì´íŠ¸ ë°°í¬"
+  short_description: "ë³€ê²½ ê²€ì¦ë¶€í„° ì»¤ë°‹ê³¼ GitHub ë¹Œë“œê¹Œì§€ ì•ˆë‚´"
   default_prompt: "Use $keyball39-release-update to validate and publish this Keyball39 update."

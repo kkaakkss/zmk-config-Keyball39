@@ -1,4 +1,4 @@
 interface:
-  display_name: "Keyball39 Å°¸Ê ÆíÁı"
-  short_description: "Keyball39 ZMK Å°¸Ê°ú µ¿ÀÛÀ» ¾ÈÀüÇÏ°Ô ¼öÁ¤"
+  display_name: "Keyball39 í‚¤ë§µ í¸ì§‘"
+  short_description: "Keyball39 ZMK í‚¤ë§µê³¼ ë™ì‘ì„ ì•ˆì „í•˜ê²Œ ìˆ˜ì •"
   default_prompt: "Use $keyball39-edit-keymap to update this Keyball39 keymap safely."

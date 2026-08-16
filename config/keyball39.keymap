@@ -462,6 +462,18 @@
             key-positions = <17 18>;
             layers = <4>;
         };
+
+        shift_P {
+            bindings = <&kp LS(P)>;
+            key-positions = <17 18>;
+            layers = <0>;
+        };
+
+        shift_T {
+            bindings = <&kp LS(T)>;
+            key-positions = <12 11>;
+            layers = <0>;
+        };
     };
 
     keymap {

@@ -402,7 +402,7 @@ combos:
   l: ['`\F_Navi', Num_Navi]
 - p: [23, 24]
   k: $$mdi:keyboard-space$$
-- p: [22, 11]
+- p: [11, 10]
   k: $$mdi:keyboard-tab$$
   l: [QWERTY, '`\F_Navi', Navi_Num, Num_Navi]
 - p: [26, 27]
@@ -412,7 +412,7 @@ combos:
   k: {t: '''', s: '"'}
   l: [QWERTY]
 - p: [11, 13]
-  k: '&dtap_to_lay2'
+  k: '&mo2_dtab_to2'
   l: [QWERTY]
 - p: [13, 14]
   k: (

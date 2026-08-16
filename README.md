@@ -5,4 +5,4 @@ PCB: *[yangxing844](https://github.com/yangxing844)* <br>
 Case: *[delock](https://github.com/delock)* <br>
 Firmware: *[Amos698](https://github.com/Amos698)* <br>
 
-<img src="keymap-drawer/keyball39.svg?v=64b95c81295bac9c5ae8d27cb54ee2480300076c" >
+<img src="keymap-drawer/keyball39.svg?v=eac90902b0fb6b25eb00bc8f995ca1bbb476542d" >

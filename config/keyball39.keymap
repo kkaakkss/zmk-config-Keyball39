@@ -228,6 +228,12 @@
             bindings = <&macro_tap>, <&out OUT_TOG>, <&macro_tap>, <&bt BT_CLR>;
         };
 
+        lclick_to0: lclick_to0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&mkp LCLK>, <&to 0>;
+        };
+
         alt_Lclick: alt_click {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -529,7 +535,7 @@
             bindings = <
 &none   &none   &mo 5        &mo 6        &none                  &none  &msc SCRL_LEFT      &msc SCRL_UP    &msc SCRL_RIGHT  &none
 &none   &none   &mkp LCLK    &mkp RCLK    &none                  &none  &none               &mkp LCLK       &mkp RCLK        &none
-&none   &none   &alt_Lclick  &alt_Rclick  &none                  &none  &kp LA(LEFT_ARROW)  &msc SCRL_DOWN  &kp LA(RIGHT)    &none
+&none   &none   &alt_Lclick  &alt_Rclick  &none                  &lclick_to0  &kp LA(LEFT_ARROW)  &msc SCRL_DOWN  &kp LA(RIGHT)    &none
 &trans  &trans  &trans       &trans       &trans  &trans  &to 0  &to 0                                                       &none
             >;
         };

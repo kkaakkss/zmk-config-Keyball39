@@ -458,3 +458,9 @@ combos:
 - p: [17, 18]
   k: $$mdi:mouse-scroll-wheel$$
   l: [Mouse]
+- p: [17, 18]
+  k: Sft+P
+  l: [QWERTY]
+- p: [12, 11]
+  k: Sft+T
+  l: [QWERTY]

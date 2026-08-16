@@ -122,11 +122,11 @@
             bindings = <&kp>, <&kp>;
         };
 
-        dtap_to_lay2: dtap_to_lay2 {
+        mo2_dtab_to2: dtap_to_lay2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp SPACE>, <&to 2>;
+            bindings = <&mo 2>, <&to 2>;
         };
 
         ctrl_guard_alt_e: ctrl_guard_alt_e {
@@ -346,7 +346,7 @@
 
         tab_combo {
             bindings = <&kp TAB>;
-            key-positions = <22 11>;
+            key-positions = <11 10>;
             layers = <0 1 2 3>;
         };
 
@@ -363,7 +363,7 @@
         };
 
         dtap_to_l2 {
-            bindings = <&dtap_to_lay2>;
+            bindings = <&mo2_dtab_to2>;
             key-positions = <11 13>;
             layers = <0>;
         };

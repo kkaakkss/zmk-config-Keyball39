@@ -346,13 +346,7 @@
 
         tab_combo {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
-            layers = <0>;
-        };
-
-        esc2_combo {
-            bindings = <&kp ESC>;
-            key-positions = <1 2>;
+            key-positions = <22 11>;
             layers = <0>;
         };
 
@@ -442,8 +436,23 @@
 
         ssang_siut {
             bindings = <&kp LS(T)>;
-            key-positions = <3 2>;
+            key-positions = <12 11>;
             layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        ssang_giyeok {
+            bindings = <&kp LS(R)>;
+            key-positions = <2 3>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        ssang_digeut {
+            bindings = <&kp LS(E)>;
+            key-positions = <2 1>;
+            layers = <0>;
+            timeout-ms = <30>;
         };
 
         dtap_to_l0 {
@@ -463,16 +472,11 @@
             layers = <4>;
         };
 
-        shift_P {
-            bindings = <&kp LS(P)>;
+        question_mark {
+            bindings = <&kp QUESTION>;
             key-positions = <17 18>;
             layers = <0>;
-        };
-
-        shift_T {
-            bindings = <&kp LS(T)>;
-            key-positions = <12 11>;
-            layers = <0>;
+            timeout-ms = <30>;
         };
     };
 

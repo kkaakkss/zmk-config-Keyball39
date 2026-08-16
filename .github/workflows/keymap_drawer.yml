@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - ".github/workflows/keymap_draser.yml"
+      - ".github/workflows/keymap_drawer.yml"
       - "keymap_drawer.config.yaml"
       - "config/**"
 
@@ -23,3 +23,41 @@ jobs:
       destination: "both"
       parse_args: ""  # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
       draw_args: ""   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
+
+  cache-bust-readme:
+    needs: draw
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout latest branch state
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Update keymap image cache key
+        shell: bash
+        run: |
+          cache_bust_sha="$(git rev-parse HEAD)"
+          python - "$cache_bust_sha" <<'PY'
+          from pathlib import Path
+          import re
+          import sys
+
+          readme = Path("README.md")
+          content = readme.read_text(encoding="utf-8")
+          updated, replacements = re.subn(
+              r'keymap-drawer/keyball39\.svg(?:\?v=[^"\s>]*)?',
+              f'keymap-drawer/keyball39.svg?v={sys.argv[1]}',
+              content,
+          )
+          if replacements != 1:
+              raise SystemExit(f"Expected one keymap image URL, found {replacements}")
+          readme.write_text(updated, encoding="utf-8")
+          PY
+
+      - name: Commit README cache key
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          file_pattern: README.md
+          commit_message: "[Docs] Refresh keymap image cache"

@@ -436,7 +436,7 @@ combos:
 - p: [25, 26]
   k: {t: '=', s: +}
 - p: [3, 2]
-  k: Sft+S
+  k: Sft+T
 - p: [11, 13]
   k: {t: QWERTY, h: toggle}
   l: [Navi_Num]

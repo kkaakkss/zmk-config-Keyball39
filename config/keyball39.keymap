@@ -133,7 +133,8 @@
             #binding-cells = <0>;
             bindings = <&alt_e_3>, <&kp E>;
 
-            mods = <MOD_LCTL>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
         ctrl_guard_alt_v: ctrl_guard_alt_v {
@@ -141,7 +142,8 @@
             #binding-cells = <0>;
             bindings = <&alt_v_1>, <&kp V>;
 
-            mods = <MOD_LCTL>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
         ctrl_guard_alt_w: ctrl_guard_alt_w {
@@ -149,7 +151,8 @@
             #binding-cells = <0>;
             bindings = <&alt_w_2>, <&kp W>;
 
-            mods = <MOD_LCTL>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
         mo3_to2_outshell: mo3_to2_outshell {
@@ -425,7 +428,7 @@
         };
 
         ssang_siut {
-            bindings = <&kp LS(S)>;
+            bindings = <&kp LS(T)>;
             key-positions = <3 2>;
         };
 

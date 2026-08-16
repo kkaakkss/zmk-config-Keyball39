@@ -347,7 +347,7 @@
         tab_combo {
             bindings = <&kp TAB>;
             key-positions = <22 11>;
-            layers = <0>;
+            layers = <0 1 2 3>;
         };
 
         minus_underscore {
@@ -365,6 +365,7 @@
         dtap_to_l2 {
             bindings = <&dtap_to_lay2>;
             key-positions = <11 13>;
+            layers = <0>;
         };
 
         kp {

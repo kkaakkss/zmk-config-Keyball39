@@ -450,6 +450,12 @@
             bindings = <&kp F2>;
             key-positions = <1 2 3>;
         };
+
+        mkp_mid {
+            bindings = <&mkp MCLK>;
+            key-positions = <17 18>;
+            layers = <4>;
+        };
     };
 
     keymap {
@@ -498,10 +504,10 @@
         mouse_layer {
             label = "Mouse";
             bindings = <
-&none   &none   &mo 5        &mo 6        &none                  &none  &none               &msc SCRL_UP               &none            &none
-&none   &none   &mkp LCLK    &mkp RCLK    &none                  &none  &msc SCRL_LEFT      &mouse_ht_click RCLK LCLK  &msc SCRL_RIGHT  &none
-&none   &none   &alt_Lclick  &alt_Rclick  &none                  &none  &kp LA(LEFT_ARROW)  &msc SCRL_DOWN             &kp LA(RIGHT)    &none
-&trans  &trans  &trans       &trans       &trans  &trans  &to 0  &to 0                                                                  &none
+&none   &none   &mo 5        &mo 6        &none                  &none  &msc SCRL_LEFT      &msc SCRL_UP    &msc SCRL_RIGHT  &none
+&none   &none   &mkp LCLK    &mkp RCLK    &none                  &none  &none               &mkp LCLK       &mkp RCLK        &none
+&none   &none   &alt_Lclick  &alt_Rclick  &none                  &none  &kp LA(LEFT_ARROW)  &msc SCRL_DOWN  &kp LA(RIGHT)    &none
+&trans  &trans  &trans       &trans       &trans  &trans  &to 0  &to 0                                                       &none
             >;
         };
 

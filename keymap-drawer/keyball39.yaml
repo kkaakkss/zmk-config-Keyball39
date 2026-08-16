@@ -402,11 +402,8 @@ combos:
   l: ['`\F_Navi', Num_Navi]
 - p: [23, 24]
   k: $$mdi:keyboard-space$$
-- p: [11, 12]
+- p: [22, 11]
   k: $$mdi:keyboard-tab$$
-  l: [QWERTY]
-- p: [1, 2]
-  k: $$mdi:keyboard-esc$$
   l: [QWERTY]
 - p: [26, 27]
   k: {t: '-', s: _}
@@ -447,8 +444,14 @@ combos:
   l: [QWERTY]
 - p: [25, 26]
   k: {t: '=', s: +}
-- p: [3, 2]
+- p: [12, 11]
   k: Sft+T
+  l: [QWERTY]
+- p: [2, 3]
+  k: Sft+R
+  l: [QWERTY]
+- p: [2, 1]
+  k: Sft+E
   l: [QWERTY]
 - p: [11, 13]
   k: {t: QWERTY, h: toggle}
@@ -459,8 +462,5 @@ combos:
   k: $$mdi:mouse-scroll-wheel$$
   l: [Mouse]
 - p: [17, 18]
-  k: Sft+P
-  l: [QWERTY]
-- p: [12, 11]
-  k: Sft+T
+  k: '?'
   l: [QWERTY]

@@ -7,7 +7,7 @@
 #define SNIPE    6
 #define OSL      7
 #define PINKY    8
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 40
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 30
 
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>

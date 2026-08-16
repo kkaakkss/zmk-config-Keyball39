@@ -7,7 +7,6 @@
 #define SNIPE    6
 #define OSL      7
 #define PINKY    8
-
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 40
 
 #include <behaviors/mouse_keys.dtsi>
@@ -499,10 +498,10 @@
         mouse_layer {
             label = "Mouse";
             bindings = <
-&none   &none   &mo 5        &mo 6        &none                  &none  &none               &none                      &none          &none
-&none   &none   &mkp LCLK    &mkp RCLK    &none                  &none  &mkp LCLK           &mouse_ht_click RCLK LCLK  &mkp MCLK      &none
-&none   &none   &alt_Lclick  &alt_Rclick  &none                  &none  &kp LA(LEFT_ARROW)  &none                      &kp LA(RIGHT)  &none
-&trans  &trans  &trans       &trans       &trans  &trans  &to 0  &to 0                                                                &none
+&none   &none   &mo 5        &mo 6        &none                  &none  &none               &msc SCRL_UP               &none            &none
+&none   &none   &mkp LCLK    &mkp RCLK    &none                  &none  &msc SCRL_LEFT      &mouse_ht_click RCLK LCLK  &msc SCRL_RIGHT  &none
+&none   &none   &alt_Lclick  &alt_Rclick  &none                  &none  &kp LA(LEFT_ARROW)  &msc SCRL_DOWN             &kp LA(RIGHT)    &none
+&trans  &trans  &trans       &trans       &trans  &trans  &to 0  &to 0                                                                  &none
             >;
         };
 

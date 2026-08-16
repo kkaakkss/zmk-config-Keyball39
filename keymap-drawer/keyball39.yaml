@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - {t: C, h: '$$mdi:apple-keyboard-caps$$'}
+  - C
   - S
   - {t: D, h: Pinky}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
@@ -21,7 +21,7 @@ layers:
   - {t: K, h: Pinky}
   - L
   - {t: ;, s: ':'}
-  - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
+  - Z
   - X
   - A
   - Q

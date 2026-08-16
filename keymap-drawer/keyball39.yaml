@@ -186,7 +186,7 @@ layers:
   - '&alt_Lclick'
   - '&alt_Rclick'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&lclick_to0'
   - Alt+$$mdi:arrow-left-bold$$
   - $$mdi:pan-down$$
   - Alt+$$mdi:arrow-right-bold$$
